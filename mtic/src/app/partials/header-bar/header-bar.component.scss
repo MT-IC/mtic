@@ -1,0 +1,40 @@
+@import '../../../assets/scss/variables';
+
+.header-bar {
+    background-color: $headerBackgroundColor;
+    background-image: $headerBackgroundImage;
+    background-repeat: $headerBackgroundRepeat;
+    .content {
+        margin: 0 auto 0;
+        width: $contentWidth;
+        .title {
+            display: inline-block;
+            margin: 10px 0;
+            .main {
+                color: #005d57;
+                font-size: 24px;
+            }
+            .sub {
+                color: #666666;
+                font-size: 11px;
+            }
+        }
+        .menu {
+            display: inline-block;
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 1ex;
+                    cursor: pointer;
+                    &.active {
+                        background-color: $buttonActiveBackgroundColor;
+                        color: $buttonActiveTextColor;
+                        border-radius: 3px;
+                        line-height: 20px;
+                        padding: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

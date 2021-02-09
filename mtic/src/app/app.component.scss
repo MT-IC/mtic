@@ -1,0 +1,12 @@
+@import '../assets/scss/variables';
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.content {
+    margin: 0 auto 0;
+    width: $contentWidth;
+}

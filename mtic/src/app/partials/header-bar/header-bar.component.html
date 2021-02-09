@@ -1,0 +1,19 @@
+<div class="header-bar">
+  <div class="content">
+    <div class="title">
+        <div class="main">Marcel Timmerman IT Consultancy</div>
+        <div class="sub">Software development &amp; Solution Design</div>
+    </div>
+    <div class="menu">
+      <ul>
+        <li
+          *ngFor="let nav of navigation"
+          [class]="getClass(nav)"
+          (click)="navigate(nav)"
+        >
+          {{ nav.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

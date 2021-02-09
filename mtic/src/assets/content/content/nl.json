@@ -1,0 +1,13 @@
+{
+    "articles": [
+        {
+            "id": "1-welkom",
+            "title": "Welkom",
+            "settings": {
+                "categoryIndexes": {
+                    "home": 1
+                }    
+            }
+        }
+    ]
+}
