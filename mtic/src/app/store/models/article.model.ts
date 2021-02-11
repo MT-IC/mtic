@@ -1,13 +1,10 @@
 import { ArticleSettings } from "./articleSettings.model";
 
 export class Article {
-    id!: number;
+    id!: string;
     title!: string;
-    content: string | string[] | null = null;
+    content = '';
+    class: string | null = null;
     tags: string[] = [];
     settings: ArticleSettings = new ArticleSettings();
-
-    isRetrieved(): boolean {
-        return !!this.content;
-    }
 }

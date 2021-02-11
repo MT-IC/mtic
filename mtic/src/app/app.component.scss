@@ -7,6 +7,13 @@ body {
 }
 
 .content {
-    margin: 0 auto 0;
-    width: $contentWidth;
+    position: absolute;
+    width: 100%;
+    top: $headerHeight;
+    bottom: $footerHeight;
+    overflow: hidden auto;
+    &>div {
+        width: $contentWidth;
+        margin: 0 auto 0;
+    }
 }

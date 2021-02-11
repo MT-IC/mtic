@@ -1,0 +1,24 @@
+@import '../../../assets/scss/variables';
+
+.article {
+    color: $fontColor;
+    text-align: justify;
+}
+
+.tables-without-headers {
+    markdown ::ng-deep {
+        thead {
+            display: none;
+        }
+    }
+}
+
+markdown ::ng-deep {
+    .align-center {
+        text-align: center;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+}

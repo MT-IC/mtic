@@ -1,0 +1,6 @@
+<div class="article" *ngIf="article">
+  <div [class]="article?.class">
+    <h1 *ngIf="showTitle()">{{ article?.title }}</h1>
+    <markdown [data]="article?.content"></markdown>
+  </div>
+</div>

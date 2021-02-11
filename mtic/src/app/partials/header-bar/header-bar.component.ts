@@ -13,6 +13,11 @@ export class HeaderBarComponent {
       name: 'Home',
       path: '/',
       class: ''
+    },
+    {
+      name: 'CV',
+      path: '/article/2-curriculum-vitae',
+      class: ''
     }
   ];
 
