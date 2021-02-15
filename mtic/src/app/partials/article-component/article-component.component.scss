@@ -1,6 +1,7 @@
 @import '../../../assets/scss/variables';
+@import '../../../assets/scss/main';
 
-.article {
+.article-component {
     color: $fontColor;
     text-align: justify;
     h1 {
@@ -14,18 +15,6 @@
         thead {
             display: none;
         }
-    }
-}
-
-.btn-readmore {
-    padding: 3px 15px;
-    border: 1px solid #005d56;
-    border-radius: 4px;
-    background: #00c3b6;
-    color: white;
-    cursor: pointer;
-    &:hover {
-        background: #4fdcd3;
     }
 }
 

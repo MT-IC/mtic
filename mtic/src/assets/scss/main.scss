@@ -1,0 +1,13 @@
+@import './variables';
+
+.nav-btn {
+    padding: $buttonPadding;
+    border: $buttonBorder;
+    border-radius: $buttonBorderRadius;
+    background: #00c3b6;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        background: #4fdcd3;
+    }
+}

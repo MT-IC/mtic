@@ -1,0 +1,19 @@
+@import '../../assets/scss/main';
+
+.article {
+    .navigation {
+        height: 3em;
+        &>div {
+            display: inline-block;
+        }
+        .next-article {
+            float: right;
+            button:after {
+                content: ' >';
+            }
+        }
+        .previous-article button:before {
+            content: '< ';
+        }
+    }
+}

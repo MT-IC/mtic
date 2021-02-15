@@ -30,17 +30,8 @@ const stateReducer = createReducer<State, Action>(
         fromActions.loadContentSuccess,
         (state, content) => {
             const newContent: Content = {
-                articles: content.content.articles.map(a => {
-                    const article: Article = {
-                        id: a.id,
-                        title: a.title,
-                        content: getContent(a.content),
-                        class: a.class,
-                        tags: a.tags || [],
-                        settings: a.settings || new ArticleSettings()
-                    };
-                    return article;
-                })
+                captions: content.content.captions,
+                articles: content.content.articles.map(a => new Article(a))
             };
             return {
                 ...state,
@@ -71,18 +62,3 @@ const stateReducer = createReducer<State, Action>(
 export function reducer(state: State | undefined, action: Action): State {
     return stateReducer(state, action);
 }
-
-const getContent: (content: any) => string = ((content: any): string => {
-    if (!content) {
-        return '';
-    }
-    if (typeof content === 'string') {
-        return content;
-    }
-    const a: string[] = content;
-    if (!content?.length) {
-        return '';
-    }
-    const result = a.reduce((prev, current) => `${prev}${prev.endsWith('>') ? '' : '\r\n'}${current.startsWith('|') ? '' : '\r\n'}${current}`);
-    return result;
-});

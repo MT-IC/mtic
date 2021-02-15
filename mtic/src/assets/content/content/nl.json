@@ -1,10 +1,17 @@
 {
+    "captions": {
+        "home": "Home",
+        "resume": "CV",
+        "experience": "Werkervaringen",
+        "previous-article-button-text": "Vorige",
+        "next-article-button-text": "Volgende"
+    },
     "articles": [
         {
             "id": "welkom",
             "title": "Welkom",
             "content": [
-                "<p class=\"align-center\"><img width=\"158\" src=\"/assets/content/images/marcel.jpg\"/></p>",
+                "<p class=\"align-center\"><img width=\"158\" src=\"/assets/content/images/marcel-small.jpg\"/></p>",
                 "Ik ben een gedreven freelance software ontwikkelaar uit Apeldoorn (Gelderland) met ruime ervaring in vele disciplines. Zowel zelfstandig als in teamverband maak ik een verschil door nauwkeurig en gestructureerd te werken, maar ook buiten de gebaande paden te denken, kritisch te zijn ten aanzien van werkwijzen en procedures en oplossingen voor te stellen die efficiënt en schaalbaar zijn. Mijn houding is klantgericht en collegiaal.",
                 "Op deze website en op LinkedIn zal ik aangeven wanneer ik beschikbaar ben voor een opdracht. Indien u op de hoogte gesteld wilt worden zodra ik beschikbaar ben of u wilt informeren naar mijn beschikbaarheid voor een opdracht, stuurt u mij daarover dan een e-mail.",
                 "Met vriendelijke groeten,",
@@ -111,6 +118,7 @@
                 "| februari 1998 - maart 2001 | Hollander BV |"
             ],
             "settings": {
+                "browsable": false,
                 "categoryIndexes": {
                     "werkervaringen": 1
                 }
@@ -136,6 +144,8 @@
                 "De werkzaamheden zijn met succes afgerond zodat de administraties in de backends synchroon gehouden kunnen worden met de administratie van de fok organisatie."
             ],
             "settings": {
+                "nextButtonText": "Ouder",
+                "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
                     "werkervaringen": 2
                 }
@@ -160,6 +170,8 @@
                 "## Resultaat",
                 "De stabiliteit, kwaliteit en functionaliteit van de software zijn enorm toegenomen in de periode waarin we eraan gewerkt hebben. Na mijn bijdrage zijn teams opnieuw ingedeeld en ging een ander team hieraan verder werken."            ],
             "settings": {
+                "nextButtonText": "Ouder",
+                "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
                     "werkervaringen": 3
                 }
@@ -183,6 +195,8 @@
                 "## Resultaat",
                 "Wanneer ik het project verlaat is de certificering succesvol afgerond en is er veel werk verzet op het gebied van functionele en technische correcties en toevoegingen."            ],
             "settings": {
+                "nextButtonText": "Ouder",
+                "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
                     "werkervaringen": 4
                 }
@@ -206,6 +220,8 @@
                 "## Resultaat",
                 "Bij het schrijven van deze tekst bevindt het systeem zich in de test fase. De resultaten zijn zeer veelbelovend. Het systeem wordt gebruikt als een set gereedschappen die naar behoefte worden ingezet. Wijzigingen in bestaande campagnes zijn eenvoudig door de gebruikers zelf te realiseren."            ],
             "settings": {
+                "nextButtonText": "Ouder",
+                "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
                     "werkervaringen": 5
                 }
@@ -229,21 +245,112 @@
                 "## Resultaat",
                 "Het systeem dat nu draait werkt beter dan het oude omdat het in staat is met grotere hoeveelheden data te werken. De code is goed en volledig testbaar zonder het product eerst te hoeven installeren of afhankelijk te zijn van de inhoud van een database. Dit is een grote verbetering omdat de tests zo altijd dezelfde uitkomst hebben. Het aanbrengen van wijzigingen in het systeem gaat sneller en het resultaat is nu goed te valideren."            ],
             "settings": {
+                "nextButtonText": "Ouder",
+                "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
                     "werkervaringen": 6
                 }
             }
         },
         {
-            "id": "",
-            "title": "",
-            "tags": [],
+            "id": "communicatiesysteem-veldapparatuur",
+            "title": "Communicatiesysteem veldapparatuur",
+            "tags": ["C#.NET","Multithreading","Binaire communicatie","Dependency Injection","MQTT","IoT"],
             "content": [
-                
+                "December 2015 tot maart 2016 - Het bouwen van een server systeem voor het communiceren met eenvoudige apparatuur over GSM en GPRS verbindingen. Het systeem moet allerlei verbindingen en protocollen kunnen ontvangen en verwerken in een operationele database.",
+                "--readmore--",
+                "Tags:<br/>",
+                "C#.NET - Multithreading - Binaire communicatie - Dependency Injection - MQTT - IoT",
+                "## Situatie",
+                "De opdrachtgever heeft verschillende meet- en toegangscontrolesystemen voor ondergrondse afvalcontainers. Deze systemen hebben allemaal hun eigen fabrikant specifieke server systemen en protocollen voor het ontvangen van verbindingen en het uitwisselen van data. Bij het bouwen van deze software is destijds besloten rechtstreeks in de productiedatabase te lezen en schrijven. Nu het aantal veldapparaten groeit komt de performance van de database in het geding. Bovendien het is beheer van de systemen lastig.",
+                "## Taken",
+                "Het bouwen van een nieuwe communicatie service die betrouwbaar en schaalbaar is en de productie database ontlast. Het moet mogelijk zijn om extern uitbreidingen te laten ontwikkelen.",
+                "## Aanpak",
+                "Het doel was om een systeem op te zetten dat op basis van plugins uitbreidbaar zou zijn, waarbij de plugins geen kennis hebben van de database structuur of de werkwijze van het systeem. Daarom heb ik een bibliotheek ontwikkeld met base classes voor plugins voor het ontvangen en verwerken van communicatie sessies. Deze plugins bouwen tijdens een sessie data op waarvoor ik een model heb gemaakt. Door middel van unit-tests kunnen deze plugins worden getest en ontwikkeld, zonder kennis van het systeem of aanwezigheid van een database, eventueel door derden. De service zelf beheert de afhandeling van de plugins en de snelheid waarmee sessies worden verwerkt in de operationele database. Zodoende kan de belasting van de database gedoseerd worden.",
+                "## Resultaat",
+                "Op dit moment werkt de service met verschillende plugins voor verschillende leveranciers, die verschillende protocollen afhandelen - onder meer MQTT. Omdat de benodigde gegevens zijn klaargezet in een afzonderlijke database, en de sessies gedoseerd naar de operationele database worden verwerkt, is de belasting op de operationele database niet langer merkbaar."            ],
+            "settings": {
+                "nextButtonText": "Ouder",
+                "previousButtonText": "Nieuwer",
+                "categoryIndexes": {
+                    "werkervaringen": 7
+                }
+            }
+        },
+        {
+            "id": "uitbreiding-registratie-systeem",
+            "title": "Uitbreiding registratie systeem",
+            "tags": ["C#.NET","Ember","JavaScript","OpenStreetMaps","Leaflet","ServiceStack","SQL Server"],
+            "content": [
+                "April 2015 tot november 2015 - Het uitbreiden van een online registratie systeem voor ondergrondse afvalcontainers en afvalpassen met een forecast module en rittenplanning voor de leging van de containers. Het portaal is gebouwd met het Ember JavaScript platform met en de server werkt met ServiceStack en SQL server.",
+                "--readmore--",
+                "Tags:<br/>",
+                "C#.NET - Ember - JavaScript - OpenStreetMaps - Leaflet - ServiceStack - SQL Server",
+                "## Situatie",
+                "De opdrachtgever levert ondergrondse afvalcontainers en allerlei (software) diensten daarbij om het beheer en het gebruik zo veel mogelijk te ondersteunen. Een derde partij was bezig om met Ember een nieuw portaal te bouwen naar aanleiding van de functionaliteit van de oude.",
+                "## Taken",
+                "Het portaal is voornamelijk een invoersysteem, naar aanleiding waarvan de gegevens worden uitgewisseld met de systemen in de containers. Deze systemen sturen metingen (vulling) en gebruiksgegevens op. Men wil naar aanleiding van de historische metingen de klant ondersteunen door te voorspellen wanneer een container geleegd moet gaan worden. Op basis van deze voorspellingen moeten routes worden gepland en gevisualiseerd.",
+                "## Aanpak",
+                "Omdat het portaal nog niet opgeleverd was ben ik begonnen met het analyseren van de gegevens in de database en het opbouwen van een business intelligence database en een ETL proces voor het berekenen van de voorspellingen. Na de oplevering van het portaal heb ik een dashboard ingebouwd voor het tonen van de voorspellingen in grafieken, naar aanleiding waarvan routes aangemaakt konden worden. Door middel van een maatwerk route optimalisatie systeem met OpenStreetMaps werden routes bepaald die in het portaal getoond werden in een Leaflet plugin. Deze routes konden worden geëxporteerd voor gebruik in andere systemen.",
+                "## Resultaat",
+                "Met name het dashboard met de voorspellingen en het automatisch selecteren van containers voor leging was een functie die veel enthousiasme opriep bij opdrachtgever en klanten. Een toekomstig project zal de geplande routes integreren in de navigatiesystemen van de vrachtwagens."            ],
+            "settings": {
+                "nextButtonText": "Ouder",
+                "previousButtonText": "Nieuwer",
+                "categoryIndexes": {
+                    "werkervaringen": 8
+                }
+            }
+        },
+        {
+            "id": "teambuilding-app",
+            "title": "Teambuilding app",
+            "tags": ["C#.NET","ASP.NET","SQL Server","ModelFirst EntityFramework","MVC","Sencha Touch","JavaScript","FabricJs","PhoneGap","CSS","SASS","HTML5","Windows Azure"],
+            "content": [
+                "Oktober 2014 tot december 2018 - Een app voor de Apple en Android tablets en desktop browsers voor het verbeteren van samenwerking binnen teams. De basis voor de app is Sencha Touch in combinatie met PhoneGap Build en grafische rendering op een HTML5 canvas. Voor de backend wordt in .NET een web role gemaakt met MVC4 die draait onder Windows Azure.",
+                "--readmore--",
+                "Tags:<br/>",
+                "C#.NET - ASP.NET - SQL Server - ModelFirst EntityFramework - MVC - Sencha Touch - JavaScript - FabricJs - PhoneGap - CSS - SASS - HTML5 - Windows Azure",
+                "## Situatie",
+                "De opdrachtgever verleent diensten bij het verbeteren van samenwerking binnen teams en wil dit laten ondersteunen door middel van een app. Hij heeft hiervoor een uitgebreid model opgesteld dat zich richt op gedrag, feedback en transparantie binnen het team. Er is een uitgebreid functioneel ontwerp opgesteld.",
+                "## Taken",
+                "Het opstellen van een uitgebreide planning en urenschatting om aan te geven of de app gerealiseerd kon worden binnen het budget. Vervolgens het compleet bouwen van de applicatie, dus het bouwen van de Sencha app, het renderen van een dashboard met FabricJs, het uitwerken van de integratie met PhoneGap voor de interactie met telefoons en tablets, en het verzorgen van de volledige Azure backend inclusief database, document generatie, e-mailing en een synchronisatie mechanisme tussen de server en de clients.",
+                "## Aanpak",
+                "Omdat de opdrachtgever al meerdere slechte ervaringen had met aannemers die met dit project waren gestart, was het belangrijk zo transparant mogelijk te zijn in planning en uitvoering, en de opdrachtgever zo goed mogelijk op de hoogte te houden van de voortgang. Hiervoor heb ik met verschillende hulpmiddelen gezorgd. Specifiek voor de rapportage heb ik een concept uitgewerkt op basis van MigraDocs omdat de ondersteuning van Microsoft Reporting Services binnen Azure is stopgezet.",
+                "## Resultaat",
+                "Op het moment van schrijven is de app in gebruik voor verschillende grote organisaties. Met een enkele code base wordt zowel een web versie als een PhoneGap versie ondersteund welke zijn te downloaden uit Google Play en de Apple AppStore. Mede door de nauwe interactie met de opdrachtgever is in korte tijd enorm veel gerealiseerd."            ],
+            "settings": {
+                "nextButtonText": "Ouder",
+                "previousButtonText": "Nieuwer",
+                "categoryIndexes": {
+                    "werkervaringen": 9
+                }
+            }
+        },
+        {
+            "id": "diverse-apps",
+            "title": "Diverse Apps",
+            "tags": ["C#.NET","ASP.NET","SQL Server","CodeFirst EntityFramework","MVC","ServiceBus","Sencha Touch","Sencha ExtJS","JavaScript","CSS","Single Page Application","JsDuck","TFS"],
+            "content": [
+                "Maart 2013 tot maart 2015 - Diverse apps voor iPhone, iPad en desktop browsers voor het optimaliseren van diverse processen. Ontwikkeld in Sencha Touch voor de iPhone en iPad en in Sencha ExtJS voor desktop browsers, met een .NET MVC server kant.",
+                "--readmore--",
+                "Tags:<br/>",
+                "C#.NET - ASP.NET - SQL Server - CodeFirst EntityFramework - MVC - ServiceBus - Sencha Touch - Sencha ExtJS - JavaScript - CSS - Single Page Application - JsDuck - TFS",
+                "## Situatie",
+                "De opdrachtgever is bezig om een aantal zeer inefficinte processen te automatiseren en te optimaliseren door met diverse apps de werkprocessen te normaliseren. De problemen die zich voordoen zijn bijvoorbeeld het onjuist opnemen en verwerken van offertes, het niet of onjuist verwerken van op ad-hoc basis uit te voeren of uitgevoerde werkzaamheden waardoor deze niet gefactureerd (kunnen) worden.",
+                "## Taken",
+                "Mijn taken omvatten het technisch ontwerpen en implementeren van apps en de achterliggende MVC controllers, business logica en data laag. Verder het doen van aanpassingen aan en aanvullingen op bestaande ServiceBus systemen en het inschatten en implementeren van RFC's in alle lagen van de architectuur. Met name de problemen die ontstaan bij het gebruik van de Sencha platforms in onze specifieke situatie leveren hoofdbrekens op.",
+                "## Aanpak",
+                "De apps worden gebouwd met een Sencha voorkant, waarbij in de browser, in JavaScript, een complete MVC architectuur wordt gebouwd in een Single Page Application. De data wordt uitgewisseld met de server middels ASP.NET MVC controllers, waarbij dus enkel Views en Controllers worden gebruikt. De standaard lagen architectuur wordt uitgebreid met een ServiceBus die de communicatie met andere applicaties faciliteert.",
+                "Een rol die ik specifiek heb ingevuld in het team is die van Sencha deskundige; ik schreef code voor het oplossen van bugs in de Sencha code (overrides) en hielp problemen, die samenhingen met de specifieke toepassing van de platforms, op te lossen door te debuggen in de Sencha code zelf. Verder heb ik een framework gebouwd voor het normaliseren van over de apps gedeelde logica.",
+                "## Resultaat",
+                "Ten tijde van het schrijven van dit verslag zijn er al enige apps ontwikkeld die met toenemende kwaliteit worden gerealiseerd doordat ontwikkelaars sterk afhankelijk zijn van de opgedane ervaring met de Sencha platforms. Door het toenemende inzicht zijn de ontwikkelingen tevens steeds beter te plannen. Ook de werking en architectuur van de 'achterkant' is goed en leent zich goed voor analyse. De geleverde kwaliteit is goed."                
             ],
             "settings": {
+                "nextButtonText": "Ouder",
+                "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "werkervaringen": 1
+                    "werkervaringen": 10
                 }
             }
         }

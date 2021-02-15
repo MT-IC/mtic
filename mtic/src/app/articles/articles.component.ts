@@ -19,7 +19,7 @@ export class ArticlesComponent extends BaseComponent implements OnInit {
     super();
   }
 
-  getCategory(): string {
+  getClass(): string {
     return `articles ${this.route.snapshot.data.category}`.trim();
   }
 

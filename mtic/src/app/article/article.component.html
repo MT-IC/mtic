@@ -1,3 +1,19 @@
-<div *ngIf="article$ | async as article">
+<div class="article" *ngIf="article$ | async as article">
   <app-article-component [article]="article" [full]="true"></app-article-component>
+  <div class="navigation">
+    <div class="previous-article" *ngIf="previousArticle$ | async as previousArticle">
+      <button
+        class="nav-btn"
+        *ngIf="previousArticle"
+        [title]="previousArticle?.title"
+        (click)="to(previousArticle)">{{ previousArticleButtonText }}</button>
+    </div>
+    <div class="next-article" *ngIf="nextArticle$ | async as nextArticle">
+      <button 
+        class="nav-btn"
+        *ngIf="nextArticle"
+        [title]="nextArticle?.title"
+        (click)="to(nextArticle)">{{ nextArticleButtonText }}</button>
+    </div>
+  </div>
 </div>
