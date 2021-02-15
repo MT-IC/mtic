@@ -12,7 +12,7 @@
             display: inline-block;
             margin: 10px 0;
             .main {
-                color: #005d57;
+                color: $headerFontColor;
                 font-size: 24px;
             }
             .sub {
@@ -26,13 +26,13 @@
                 li {
                     display: inline-block;
                     margin-right: 1ex;
+                    padding: 4px;
+                    border-radius: 3px;
+                    line-height: 20px;
                     cursor: pointer;
                     &.active {
                         background-color: $buttonActiveBackgroundColor;
                         color: $buttonActiveTextColor;
-                        border-radius: 3px;
-                        line-height: 20px;
-                        padding: 4px;
                     }
                 }
             }

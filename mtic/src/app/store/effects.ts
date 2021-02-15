@@ -4,7 +4,7 @@ import { Service } from '../app.service';
 import * as actions from './actions';
 import { map, catchError, exhaustMap, withLatestFrom, filter } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
-import { Action, Store } from '@ngrx/store';
+import { Store } from '@ngrx/store';
 import * as selectors from './selectors';
 import { Content } from './models/content.model';
 

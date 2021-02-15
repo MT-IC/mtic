@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ActionReducerMap, StoreModule } from '@ngrx/store';
-import { HomeComponent } from './home/home.component';
+import { ArticlesComponent } from './articles/articles.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterBarComponent } from './partials/footer-bar/footer-bar.component';
 import { HeaderBarComponent } from './partials/header-bar/header-bar.component';
@@ -33,11 +33,12 @@ export const reducers: ActionReducerMap<ReducerState> = {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    ArticlesComponent,
     FooterBarComponent,
     HeaderBarComponent,
     ArticleComponentComponent,
-    ArticleComponent
+    ArticleComponent,
+    ArticlesComponent
   ],
   imports: [
     CommonModule,

@@ -1,9 +1,8 @@
 {
     "articles": [
         {
-            "id": "1-welkom",
+            "id": "welkom",
             "title": "Welkom",
-            "tags": [],
             "content": [
                 "<p class=\"align-center\"><img width=\"158\" src=\"/assets/content/images/marcel.jpg\"/></p>",
                 "Ik ben een gedreven freelance software ontwikkelaar uit Apeldoorn (Gelderland) met ruime ervaring in vele disciplines. Zowel zelfstandig als in teamverband maak ik een verschil door nauwkeurig en gestructureerd te werken, maar ook buiten de gebaande paden te denken, kritisch te zijn ten aanzien van werkwijzen en procedures en oplossingen voor te stellen die efficiënt en schaalbaar zijn. Mijn houding is klantgericht en collegiaal.",
@@ -20,64 +19,233 @@
             }
         },
         {
-            "id": "2-curriculum-vitae",
+            "id": "beschikbaar",
+            "title": "Beschikbaar per 1 september 2020",
+            "content": [""],
+            "settings": {
+                "hidden": true,
+                "categoryIndexes": {
+                    "home": 0
+                }
+            }
+        },
+        {
+            "id": "curriculum-vitae",
             "title": "Curriculum Vitae",
             "class": "tables-without-headers",
             "tags": [],
             "content": [
-                "# Inleiding",
-                "Ik ben in 1997 afgestudeerd in de industriële automatisering en ben daar de eerste jaren na mijn afstuderen ook in werkzaam geweest. Al snel werd ik aangetrokken door de uitdaging van de kantoor automatisering en begon ik te werken aan de integratie van industriële processen in de administratieve. Door teruglopende behoefte aan efficiëntie verbetering op dat vlak kwam dit niet goed van de grond en ben ik in 2002 volledig in de kantoor automatisering gegaan. De eerste jaren heb ik geprogrammeerd in VB6 en VB.NET (dotnet), daarna in Delphi 7 en C#.NET (dotnet).",
+                "## Inleiding",
+                "Ik ben in 1997 afgestudeerd in de industriële automatisering en ben daar de eerste jaren na mijn afstuderen ook in werkzaam geweest. Al snel werd ik aangetrokken door de uitdaging van de kantoor automatisering en begon ik te werken aan de integratie van industriële processen in de administratieve. Door teruglopende behoefte aan efficiëntie verbetering op dat vlak kwam dit niet goed van de grond en ben ik in 2002 volledig in de kantoor automatisering gegaan. De eerste jaren heb ik voornamelijk geprogrammeerd in VB6 en VB.NET (dotnet), daarna in Delphi 7 en C#.NET (dotnet), maar ook in andere talen zoals hieronder te zien is.",
                 "",
-                "# Personalia",
-                "&nbsp | &nbsp;",
-                "--- | ---",
-                "Naam | M.K. Timmerman (Marcel)",
-                "Geboortedatum | 15 september 1974",
-                "Nationaliteit | Nederlandse",
-                "Vooropleidingen | MAVO, MTS",
-                "Vervolgopleidingen | HTS",
-                "Afstudeerrichting | Industriële automatisering",
-                "Talen | Nederlands (moedertaal)",
-                " | Engels (gevorderd)",
+                "## Personalia",
+                "| &nbsp | &nbsp; |",
+                "| --- | --- |",
+                "| Naam | M.K. Timmerman (Marcel) |",
+                "| Geboortedatum | 15 september 1974 |",
+                "| Nationaliteit | Nederlandse |",
+                "| Vooropleidingen | MAVO, MTS |",
+                "| Vervolgopleidingen | HTS |",
+                "| Afstudeerrichting | Industriële automatisering |",
+                "| Talen | Nederlands (moedertaal) |",
+                "| | Engels (gevorderd) |",
                 "",
-                "# Vaardigheden",
-                "(<span class=\"junior\"></span>=junior, <span class=\"medior\"></span>=medior, <span class=\"senior\"></span>=senior)",
+                "## Vaardigheden",
+                "(<i class=\"junior\"></i>=junior, <i class=\"medior\"></i>=medior, <i class=\"senior\"></i>=senior)",
                 "",
-                "## Programmeertalen",
-                "<span class=\"junior\">C#.NET</span>",
-                "<span class=\"junior\">Regular Expressions</span>",
-                "<span class=\"junior\">HTML, CSS, SASS</span>",
-                "<span class=\"junior\">JavaScript / TypeScript</span>",
-                "<span class=\"junior\">Linq / LinqToSql / LinqToEntities</span>",
-                "<span class=\"junior\">SQL</span>",
+                "### Programmeertalen",
+                "C#.NET <i class=\"senior\"></i><br/>",
+                "Regular Expressions <i class=\"senior\"></i><br/>",
+                "HTML, CSS, SASS <i class=\"senior\"></i><br/>",
+                "XML, XSD, XSLT, XPath <i class=\"senior\"></i><br/>",
+                "JavaScript / TypeScript <i class=\"medior\"></i><br/>",
+                "SQL <i class=\"senior\"></i><br/>",
+                "### Methoden",
+                "Agile, Scrum <i class=\"senior\"></i><br/>",
+                "Object Oriented <i class=\"senior\"></i><br/>",
+                "SOA <i class=\"senior\"></i><br/>",
+                "### Technieken/platforms",
+                "Microsoft Azure <i class=\"medior\"></i><br/>",
+                "EntityFramework <i class=\"senior\"></i><br/>",
+                "Linq / LinqToSql / LinqToEntities <i class=\"senior\"></i><br/>",
+                "Angular / NGRX <i class=\"medior\"></i><br/>",
+                "ASP.NET <i class=\"senior\"></i><br/>",
+                "MVC <i class=\"senior\"></i><br/>",
+                "Ajax <i class=\"senior\"></i><br/>",
+                "Specflow (Gherkin) <i class=\"medior\"></i><br/>",
+                "### Database",
+                "SQL Server <i class=\"senior\"></i><br/>",
+                "### Tools",
+                "Visual Studio / Visual Studio Code <i class=\"senior\"></i><br/>",
+                "Git / Bitbucket / SVN <i class=\"senior\"></i><br/>",
+                "TeamCity / Octopus <i class=\"senior\"></i><br/>",
+                "Atlassian Jira <i class=\"medior\"></i><br/>",
+                "Azure DevOps <i class=\"senior\"></i><br/>",
+                "Microsoft Office (Word, Excel, Access) <i class=\"senior\"></i><br/>",
                 "",
-                "## Methoden",
-                "<span class=\"junior\">Agile, Scrum</span>",
-                "<span class=\"junior\">Object Oriented</span>",
-                "<span class=\"junior\">SOA</span>",
-                "",
-                "## Technieken",
-                "<span class=\"junior\">Windows Azure</span>",
-                "<span class=\"junior\">XML, XSD, XSLT, XPath</span>",
-                "<span class=\"junior\">WCF</span>",
-                "<span class=\"junior\">EntityFramework</span>",
-                "<span class=\"junior\">Angular</span>",
-                "<span class=\"junior\">ASP.NET</span>",
-                "<span class=\"junior\">MVC</span>",
-                "<span class=\"junior\">Ajax</span>",
-                "<span class=\"junior\">Specflow (Gherkin)</span>",
-                "",
-                "## Database",
-                "<span class=\"junior\">SQL Server</span>",
-                "<span class=\"junior\">MySql</span>",
-                "",
-                "## Tools",
-                "<span class=\"junior\">Visual Studio</span>",
-                "<span class=\"junior\">Git / Bitbucket / SVN</span>",
-                "<span class=\"junior\">TeamCity / Octopus</span>",
-                "<span class=\"junior\">Atlassian Jira</span>",
-                "<span class=\"junior\">Azure DevOps (TFS)</span>",
-                "<span class=\"junior\">Microsoft Office (Word, Excel, Access)</span>"            ]
+                "## Persoonlijk/vrije tijd",
+                "Ik ben getrouwd en heb twee kinderen. Ik ben niet actief op social media maar doe mijn best om Jezus te volgen en ga elke zondag naar de kerk, waarvoor ik ook vrijwilligerswerk doe. Ik speel volleybal op recreatief niveau. Verder klus ik graag rondom het huis en geniet van de buitenlucht en de natuur."
+            ]
+        },
+        {
+            "id": "werkervaringen",
+            "title": "Werk-/Opdrachtgevers",
+            "class": "tables-without-headers",
+            "content": [
+                "| &nbsp; | &nbsp; |",
+                "| --- | --- |",
+                "| juli 2020 - heden | Asito |",
+                "| januari 2019 - juni 2020 | AgroVision B.V. |",
+                "| oktober 2017 - januari 2019 | CCV |",
+                "| april 2016 - september 2017 | TUI |",
+                "| april 2015 - maart 2016 | BWaste International BV |",
+                "| oktober 2014 - maart 2015 | WIZIN |",
+                "| maart 2013 - maart 2015 | Asito |",
+                "| september 2012 - februari 2013 | De Expiratiedesk |",
+                "| mei 2012 - augustus 2012 | Independer.nl |",
+                "| januari 2012 - april 2012 | Europ Assistance (ZZP) |",
+                "| september 2008 - december 2011 | Europ Assistance |",
+                "| maart 2005 - augustus 2008 | Ascalon BV |",
+                "| april 2002 - februari 2005 | Centric IT Solutions |",
+                "| april 2001 - maart 2002 | ICT |",
+                "| februari 1998 - maart 2001 | Hollander BV |"
+            ],
+            "settings": {
+                "categoryIndexes": {
+                    "werkervaringen": 1
+                }
+            }
+        },
+        {
+            "id": "uitbreiding-van-data-uitwisseling-systeem",
+            "title": "Uitbreiding van data uitwisseling systeem",
+            "tags": [".NET","SQL Server","MVC","EntityFrameworkCore","Scrum"],
+            "content": [
+                "December 2019 tot juni 2020 - Het uitbreiden van een data uitwisseling systeem en het bouwen van een adapter voor een specifieke externe API.",
+                "--readmore--",
+                "Tags:<br/>",
+                ".NET - SQL Server - MVC - EntityFrameworkCore - Scrum",
+                "## Situatie",
+                "Het data uitwisseling systeem wordt dagelijks gevoed met imports vanuit verschillende systemen met fok administraties van varkenshouders. De verschillen tussen de import en de in de database aanwezige data worden bepaald en opgeslagen, waarbij ook historie bewaard blijft. Het systeem stelt een API beschikbaar voor externe partijen, en er is een adapter gebouwd om dagelijks wijzigingen naar een specifieke fok organisatie te sturen. Er is behoefte om een tweede adapter te bouwen, voor een andere fok organisatie. Aangezien deze organisatie aanzienlijk meer informatie nodig heeft, moeten er ook uitbreidingen komen op het datamodel, de verwerking van de imports en het aanmaken van de exports.",
+                "## Taken",
+                "Het ontwerp en de bouw van de nieuwe adapter, waarbij de meeste tijd is besteed aan het bouwen van de communicatie. De API waarmee gecommuniceerd moet worden is oorspronkelijk gebouwd als backend voor een data invoer web applicatie waarin gezocht kan worden, een gevonden record kan worden bewerkt dat vervolgens kan worden opgeslagen of waarop de wijzigingen kunnen worden teruggedraaid. Ook invoer en verwijderen werken op soortgelijke wijze. Daarbij komt dat er met allerlei validaties rekening gehouden moet worden, en dat de volgorde van het aanbrengen van de wijzigingen zeer belangrijk is. Dit leidt tot een intensief communicatieproces dat bovendien zeer moeilijk te testen was. Naast deze communicatie moeten er tevens web portalen worden gebouwd voor gebruik door de support organisatie en door de gebruikers zelf, voor het instellen van rechten, en instellen van bepaalde mappings en het monitoren van de communicatie.",
+                "Tijdens dit project ben ik scrum-master geweest.",
+                "## Aanpak",
+                "We zijn begonnen met het implementeren van een client voor de API, waarbij een specifieke serialisatie methode is gebouwd. Daarna zijn entiteiten toegevoegd of uitgebreid in de database en de ex- en import. Tegelijk zijn generieke classes gebouwd om de communicatie uit te voeren in de correcte volgorde. Omdat de test mogelijkheden op de werkelijke API beperkt waren, is er ook veel tijd gestoken in integratietests waarin zo veel mogelijk scenarios getest werden. In deze tests werden alleen de EntityFramework context en de API communicatie gemocked. Zodoende kon niet alleen de logica worden getest, ook kon zodoende duidelijk worden gemaakt hoe e.e.a. behoort te werken. Ook zijn de benodigde portalen gebouwd.",
+                "## Resultaat",
+                "De werkzaamheden zijn met succes afgerond zodat de administraties in de backends synchroon gehouden kunnen worden met de administratie van de fok organisatie."
+            ],
+            "settings": {
+                "categoryIndexes": {
+                    "werkervaringen": 2
+                }
+            }
+        },
+        {
+            "id": "app-voor-varkenshouderij",
+            "title": "App voor varkenshouderij",
+            "tags": [".NET","Xamarin","Android","iOS","MVC","Web API","RabbitMQ","TFS","CI/CD","Scrum"],
+            "content": [
+                "Januari 2019 tot november 2019 - Doorontwikkelen van een app en bijbehorende API.",
+                "--readmore--",
+                "Tags:<br/>",
+                ".NET - Xamarin - Android - iOS - MVC - Web API - RabbitMQ - TFS - CI/CD - Scrum",
+                "## Situatie",
+                "Wanneer ik aanschuif in dit project staat er al een basis voor de app en de API. De app moet worden uitgebreid zodat zo veel mogelijk van de handelingen, die varkenshouders in de stal moeten doen, via de app gedaan kunnen worden. De API communiceert via RabbitMQ met vier verschillende backend applicaties, waaronder ook instanties die bij klanten thuis geïnstalleerd zijn.",
+                "## Taken",
+                "De werkzaamheden omvatten het uitbreiden van de functionaliteiten van de app en de API, waaronder ook communicatie met externe RFID lezers. Ook hebben we grote stappen gemaakt in het verbeteren van de software kwaliteit en het verbeteren van het gebruik van RabbitMQ, omdat dit aanvankelijk verkeerd opgezet was. Hierdoor kon de doorstroom van het dataverkeer niet gedoseerd worden (throttling) wat regelmatig tot problemen leidde.",
+                "## Aanpak",
+                "Doorgaans werd het werk georganiseerd middels scrum in Microsoft TFS (Azure DevOps). Specifiek heb ik me bezig gehouden met een grote aanpassing in de manier waarop RabbitMQ werd gebruikt. Om de noodzaak van deze wijziging uit te leggen heb ik presentaties gehouden voor het team en de mensen die hierover moesten beslissen, en ik heb het uiteindelijk uitgevoerd.",
+                "De software voor de app werd herschreven in een generieke manier, om schermen en gedrag zo veel mogelijk te standaardiseren.",
+                "## Resultaat",
+                "De stabiliteit, kwaliteit en functionaliteit van de software zijn enorm toegenomen in de periode waarin we eraan gewerkt hebben. Na mijn bijdrage zijn teams opnieuw ingedeeld en ging een ander team hieraan verder werken."            ],
+            "settings": {
+                "categoryIndexes": {
+                    "werkervaringen": 3
+                }
+            }
+        },
+        {
+            "id": "software-voor-betaalterminals",
+            "title": "Software voor betaalterminals",
+            "tags": ["C#.NET","Mono","Dependency Injection","Remoting","AngularJS","Web API","Test automation","Specflow"],
+            "content": [
+                "Oktober 2017 tot januari 2019 - Doorontwikkelen van software voor betaalterminals. ",
+                "--readmore--",
+                "Tags:<br/>",
+                "C#.NET - Mono - Dependency Injection - Remoting - AngularJS - Web API - Test automation - Specflow",
+                "## Situatie",
+                "Er is al enige jaren gewerkt aan een modulaire .NET applicatie voor betaalterminals als ik het team kom versterken. De software communiceert op verschillende vlakken met andere systemen (secure onderlaag, kassasysteem, configuratie service, betalingsautorisatie services, etc) en bevat bovendien diverse interfaces die het mogelijk maken geautomatiseerd “on target” te kunnen testen. Wanneer ik aan het team wordt toegevoegd is men net begonnen met een langdurige certificering waarbij nauwgezet de complexe communicatie met de betaalkaarten en de betalingsautorisatie services wordt getest.",
+                "## Taken",
+                "Mijn werkzaamheden omvatten gedurende de eerste maanden vooral het analyseren van problemen die werden aangetroffen tijdens de certificering, en het oplossen daarvan voor zover de oplossing in ons domein lag. Door allerlei oorzaken is dit een zeer lang traject geworden. Na verloop van tijd kwamen daar ook andere taken bij, zoals werken aan de geïntegreerde web applicatie, verschillende interfaces, unit-, integratie- en robottests en allerlei overige taken die door requirements of “legacy” aan de orde komen, zoals nieuwe functionaliteiten of refactoring.",
+                "## Aanpak",
+                "Door de grote complexiteit van het systeem en de materie, en de veelheid aan benodigde kennis blijft het voor een nieuwe ontwikkelaar lang lastig om de weg in de code en de omgeving te vinden. Binnen het team werd dat goed opgelost door veel samen te werken. ",
+                "## Resultaat",
+                "Wanneer ik het project verlaat is de certificering succesvol afgerond en is er veel werk verzet op het gebied van functionele en technische correcties en toevoegingen."            ],
+            "settings": {
+                "categoryIndexes": {
+                    "werkervaringen": 4
+                }
+            }
+        },
+        {
+            "id": "dynamisch-data-integratie-platform",
+            "title": "Dynamisch data integratie platform",
+            "tags": ["C#.NET","SQL Server","Code First EntityFramework","WCF","Dependency Injection","Expression trees","Service Oriented Architecture"],
+            "content": [
+                "Februari 2017 tot september 2017 - Het vervangen van een statische data integratie applicatie door een platform waarin data integratie plaatsvindt deels op basis van overeenkomsten in veranderlijke datamodellen en deels op basis van configuratie.",
+                "--readmore--",
+                "Tags:<br/>",
+                "C#.NET - SQL Server - Code First EntityFramework - WCF - Dependency Injection - Expression trees - Service Oriented Architecture",
+                "## Situatie",
+                "De opdrachtgever heeft een systeem dat interesse van klanten voor producten, naar aanleiding van klikgedrag op de website, combineert met informatie over beschikbare voorraad en product informatie zoals beschrijvingen en afbeeldingen zodat dit kan worden aangeboden aan een e-mail marketing applicatie. Dit wordt een campagne genoemd. In de applicatie zijn zo’n zeven campagnes geprogrammeerd. Een nieuwe klant verlangt veel meer diversiteit en dynamiek in campagnes en kan dus niet voor elke wijziging maanden wachten totdat ontwikkelteams dit hebben gerealiseerd.",
+                "## Taken",
+                "Het ontwerpen en ontwikkelen van een nieuw systeem dat zo veel mogelijk functionaliteit automatisch verricht op basis van aangeboden data structuur en verder door gebruikers te configureren is. Bovendien zijn de eisen op performance gebied aanzienlijk omdat het aantal te verwerken records voor de nieuwe klant zo’n vijf maal hoger ligt dan wat er door het bestaande systeem werd verwerkt.",
+                "## Aanpak",
+                "Voor elk van de functionele gebieden (selectie van aanbiedingen uit voorraad, verrijken met artikel informatie, lezen van externe informatie, berekenen van afgeleide informatie en validatie) heb ik WCF services ontwikkeld die zowel als service als direct benaderbaar zijn om onnodige serialisatie door WCF te voorkomen. Deze services bevatten veelal een initialisatie fase waarin de uit te voeren handelingen worden vastgesteld, voorbereid en geoptimaliseerd, zodat de bewerkingen in de uitvoerende fase zo snel mogelijk verlopen. Veel functionaliteit is gebaseerd op gestandaardiseerde kolomnamen. Een configuratie portal maakt het mogelijk om expliciete instellingen te doen.",
+                "## Resultaat",
+                "Bij het schrijven van deze tekst bevindt het systeem zich in de test fase. De resultaten zijn zeer veelbelovend. Het systeem wordt gebruikt als een set gereedschappen die naar behoefte worden ingezet. Wijzigingen in bestaande campagnes zijn eenvoudig door de gebruikers zelf te realiseren."            ],
+            "settings": {
+                "categoryIndexes": {
+                    "werkervaringen": 5
+                }
+            }
+        },
+        {
+            "id": "verwerkingssysteem-voor-datastromen",
+            "title": "Verwerkingssysteem voor datastromen",
+            "tags": ["C#.NET","SQL Server","XML","Generic Classes","Dependency Injection","Automapper","Data optimaal programmeren"],
+            "content": [
+                "April 2016 tot januari 2017 - Het bouwen van een vervanging voor een bestaand dataverwerkingssysteem dat gebouwd was in Integration Services van Microsoft SQL Server. Het systeem moet grote hoeveelheden data kunnen verwerken van platte tabellen naar een stervormig datamodel ten behoeve van marketing en rapportage.",
+                "--readmore--",
+                "Tags:<br/>",
+                "C#.NET - SQL Server - XML - Generic Classes - Dependency Injection - Automapper - Data optimaal programmeren",
+                "## Situatie",
+                "De opdrachtgever heeft een systeem geërfd dat gebouwd is in bovengenoemd systeem dat dagelijks grote hoeveelheden data verwerkt dat aangeleverd wordt in databases of XML bestanden. Het platform waarop gebouwd is maakt het onmogelijk om de kwaliteit van de code te verhogen op het gebied van testbaarheid en herbruikbaarheid (DRY). Kleine wijzigingen in het systeem leiden dikwijls tot fouten doordat dezelfde data structuren veelvoudig in het systeem voorkomen zonder gerelateerd te zijn of te kunnen zijn.",
+                "## Taken",
+                "Het bouwen van een systeem in C#.NET dat vergelijkbaar is met het oude systeem voor wat betreft overzichtelijkheid in control- en dataflows. Verder moet het systeem eenvoudig aanpasbaar en uitbreidbaar zijn zodat bijvoorbeeld, wanneer er een kolom wordt gewijzigd of toegevoegd, de ontwikkelaar vanzelf wordt gewezen op de plaatsen waar een aanpassing moet worden doorgevoerd. Verder moet de snelheid van het systeem vergelijkbaar of beter zijn dan het oude. Het systeem moet zo veel mogelijk worden voorzien van unit tests.",
+                "## Aanpak",
+                "Eerst heb ik een aantal componenten gebouwd die soortgelijke taken uitvoeren als de meest gangbare componenten in Integration Services, zoals data bronnen en bestemmingen, lookup, split en merge. Deze classes zijn allemaal generic zodat er altijd strong-typed gewerkt kan worden. Vervolgens heb ik een gelaagd systeem gebouwd waarbij de data wordt gemapt middels interfaces en Automapper. De database toegang wordt middels Dependency Injection gekoppeld zodat voor de tests niet altijd databases nodig zijn. Door middel van tests op de Automapper configuratie wordt gevalideerd of alle velden van bron en doel zijn opgenomen in het systeem.",
+                "## Resultaat",
+                "Het systeem dat nu draait werkt beter dan het oude omdat het in staat is met grotere hoeveelheden data te werken. De code is goed en volledig testbaar zonder het product eerst te hoeven installeren of afhankelijk te zijn van de inhoud van een database. Dit is een grote verbetering omdat de tests zo altijd dezelfde uitkomst hebben. Het aanbrengen van wijzigingen in het systeem gaat sneller en het resultaat is nu goed te valideren."            ],
+            "settings": {
+                "categoryIndexes": {
+                    "werkervaringen": 6
+                }
+            }
+        },
+        {
+            "id": "",
+            "title": "",
+            "tags": [],
+            "content": [
+                
+            ],
+            "settings": {
+                "categoryIndexes": {
+                    "werkervaringen": 1
+                }
+            }
         }
     ]
 }

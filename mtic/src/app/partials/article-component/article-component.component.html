@@ -1,6 +1,7 @@
 <div class="article" *ngIf="article">
-  <div [class]="article?.class">
+  <div [class]="getArticleClass()">
     <h1 *ngIf="showTitle()">{{ article?.title }}</h1>
-    <markdown [data]="article?.content"></markdown>
+    <markdown [data]="getContent()"></markdown>
+    <button class="btn-readmore" *ngIf="!full && hasReadMore()" (click)="readMore()">Lees meer...</button>
   </div>
 </div>

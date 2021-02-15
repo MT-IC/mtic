@@ -4,6 +4,7 @@ import * as fromActions from './actions';
 import { Content } from './models/content.model';
 import { Article } from './models/article.model';
 import { ArticleSettings } from './models/articleSettings.model';
+import { routerNavigatedAction } from './route';
 
 const initialState = new State();
 
@@ -55,7 +56,16 @@ const stateReducer = createReducer<State, Action>(
                 loading: false,
                 loaded: true
             };
-        })
+        }),
+    on(
+        routerNavigatedAction,
+        (state, action) => {
+            return {
+                ...state,
+                activeHeaderButton: action.payload.routerState.root?.firstChild?.data?.activeHeaderButton || state.activeHeaderButton
+            };
+        }
+    )
 );
 
 export function reducer(state: State | undefined, action: Action): State {
@@ -70,6 +80,9 @@ const getContent: (content: any) => string = ((content: any): string => {
         return content;
     }
     const a: string[] = content;
-    const result = a.reduce((prev, current) => `${prev}\r\n${current}`);
+    if (!content?.length) {
+        return '';
+    }
+    const result = a.reduce((prev, current) => `${prev}${prev.endsWith('>') ? '' : '\r\n'}${current.startsWith('|') ? '' : '\r\n'}${current}`);
     return result;
 });

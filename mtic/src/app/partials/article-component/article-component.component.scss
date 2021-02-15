@@ -3,6 +3,10 @@
 .article {
     color: $fontColor;
     text-align: justify;
+    h1 {
+        color: $headerFontColor;
+        font-weight: 500;
+    }
 }
 
 .tables-without-headers {
@@ -13,12 +17,57 @@
     }
 }
 
+.btn-readmore {
+    padding: 3px 15px;
+    border: 1px solid #005d56;
+    border-radius: 4px;
+    background: #00c3b6;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        background: #4fdcd3;
+    }
+}
+
 markdown ::ng-deep {
+    h1, 
+    h2,
+    h3 {
+        color: $headerFontColor;
+        font-weight: 500;
+    }
+
+    td {
+        padding-right: 10px;
+    }
+
     .align-center {
         text-align: center;
     }
 
     .align-right {
         text-align: right;
+    }
+
+    /* Styles for resume */
+    .junior:before,
+    .medior:before,
+    .senior:before {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: goldenrod;
+    }
+    .junior:before {
+        content: "\f005";
+    }
+    .medior:before {
+        content: "\f005\f005";
+    }
+    .senior:before {
+        content: "\f005\f005\f005";
     }
 }

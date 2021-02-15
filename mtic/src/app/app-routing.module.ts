@@ -1,12 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ArticleComponent } from './article/article.component';
-import { HomeComponent } from './home/home.component';
+import { ArticlesComponent } from './articles/articles.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: ArticlesComponent,
+    data: {
+      category: 'home',
+      activeHeaderButton: 'Home'
+    }
+  },
+  {
+    path: 'werkervaringen',
+    component: ArticlesComponent,
+    data: {
+      category: 'werkervaringen',
+      activeHeaderButton: 'Werkervaringen'
+    }
   },
   {
     path: 'article/:articleId',

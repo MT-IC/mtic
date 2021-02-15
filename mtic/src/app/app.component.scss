@@ -13,7 +13,7 @@ body {
     bottom: $footerHeight;
     overflow: hidden auto;
     &>div {
-        width: $contentWidth;
+        max-width: $contentWidth;
         margin: 0 auto 0;
     }
 }

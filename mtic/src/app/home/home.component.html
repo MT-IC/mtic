@@ -1,7 +1,0 @@
-<div class="home">
-  <div *ngIf="articles$ | async as articles">
-    <app-article-component 
-      *ngFor="let article of articles"
-      [article]="article"></app-article-component>
-  </div>
-</div>
