@@ -17,3 +17,14 @@ body {
         margin: 0 auto 0;
     }
 }
+
+@media (max-width: $contentWidth) {
+    .content {
+        top: $headerHeightMobile;
+        &>div {
+            max-width: inherit;
+            margin: 0;
+            padding: 0 10px;
+        }
+    }
+}

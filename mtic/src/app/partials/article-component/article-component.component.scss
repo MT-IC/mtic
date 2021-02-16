@@ -4,9 +4,10 @@
 .article-component {
     color: $fontColor;
     text-align: justify;
-    h1 {
+    h1, h2, h3 {
         color: $headerFontColor;
         font-weight: 500;
+        text-align: left;
     }
 }
 
@@ -19,11 +20,10 @@
 }
 
 markdown ::ng-deep {
-    h1, 
-    h2,
-    h3 {
+    h1, h2, h3 {
         color: $headerFontColor;
         font-weight: 500;
+        text-align: left;
     }
 
     td {
@@ -58,5 +58,26 @@ markdown ::ng-deep {
     }
     .senior:before {
         content: "\f005\f005\f005";
+    }
+
+    @media (max-width: $contentWidth) {
+        h1 {
+            font-size: 1.5em;
+        }
+        h2 {
+            font-size: 1.2em;
+        }
+        h3 {
+            font-size: 1em;
+        }
+        abbr {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $contentWidth) {
+    h1 {
+        font-size: 1.5em;
     }
 }

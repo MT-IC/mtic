@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { Service } from '../app.service';
 import * as actions from './actions';
-import { map, catchError, exhaustMap, withLatestFrom, filter } from 'rxjs/operators';
+import { map, catchError, exhaustMap, withLatestFrom, filter, tap } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
 import { Store } from '@ngrx/store';
 import * as selectors from './selectors';

@@ -5,15 +5,18 @@
         <div class="sub">Software development &amp; Solution Design</div>
     </div>
     <div class="menu">
-      <ul>
-        <li
-          *ngFor="let nav of navigation"
-          [class]="getClass(nav)"
-          (click)="navigate(nav)"
-        >
-          {{ nav.name }}
-        </li>
-      </ul>
+      <div class="hamburger fa fa-bars" (click)="onHamburgerClick()"></div>
+      <div [class]="menuClass">
+        <ul>
+          <li
+            *ngFor="let nav of navigation"
+            [class]="getClass(nav)"
+            (click)="navigate(nav)"
+          >
+            {{ nav.name }}
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

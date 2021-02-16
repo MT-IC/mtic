@@ -34,6 +34,7 @@ export class HeaderBarComponent extends BaseComponent implements OnInit {
       class: ''
     }
   ];
+  menuClass = 'menu-items';
 
   constructor(private router: Router, private store: Store) {
     super();
@@ -71,10 +72,15 @@ export class HeaderBarComponent extends BaseComponent implements OnInit {
   navigate(nav: Navigation): void {
     this.store.dispatch(actions.menuItemSelected({ name: nav.id || '' }));
     this.router.navigate([nav.path]);
+    this.menuClass = 'menu-items';
   }
 
   getClass(nav: Navigation): string {
     const isActive = this.activeHeaderButton === nav.id;
     return `${nav.class} ${isActive ? 'active' : ''}`.trim();
+  }
+
+  onHamburgerClick(): void {
+    this.menuClass = this.menuClass === 'menu-items' ? 'menu-items menu-open' : 'menu-items';
   }
 }
