@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { filter, tap } from 'rxjs/operators';
+import { Store } from '@ngrx/store';
 import { BaseComponent } from './base/component.base';
+import * as actions from './store/actions';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ import { BaseComponent } from './base/component.base';
 export class AppComponent extends BaseComponent implements OnInit {
   @ViewChild('content') content: any;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private store: Store) {
     super();
   }
 
@@ -22,6 +23,8 @@ export class AppComponent extends BaseComponent implements OnInit {
         if (e instanceof NavigationEnd) {
           this.content?.nativeElement?.scrollTo(0, 0);
         }
-      });
+      }
+    );
+    this.store.dispatch(actions.loadContent());
   }
 }

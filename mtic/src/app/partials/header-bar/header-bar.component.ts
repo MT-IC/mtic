@@ -30,7 +30,13 @@ export class HeaderBarComponent extends BaseComponent implements OnInit {
     {
       id: 'experience',
       name: 'Werkervaringen',
-      path: '/werkervaringen',
+      path: '/experience',
+      class: ''
+    },
+    {
+      id: 'search',
+      name: '<span class=\"fa fa-search\"></span>',
+      path: '/search',
       class: ''
     }
   ];
@@ -77,7 +83,7 @@ export class HeaderBarComponent extends BaseComponent implements OnInit {
 
   getClass(nav: Navigation): string {
     const isActive = this.activeHeaderButton === nav.id;
-    return `${nav.class} ${isActive ? 'active' : ''}`.trim();
+    return `menu-item ${nav.class} ${isActive ? 'active' : ''}`.trim();
   }
 
   onHamburgerClick(): void {

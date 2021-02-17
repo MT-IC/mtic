@@ -43,7 +43,6 @@ export class ArticleComponent extends BaseComponent implements OnInit {
         this.nextArticleButtonText = article.settings.nextButtonText || this.previousArticleButtonText;
       }
     });
-    this.store.dispatch(actions.loadContent());
   }
 
   to(article: Article): void {

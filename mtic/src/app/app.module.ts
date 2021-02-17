@@ -21,6 +21,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import * as fromRouter from './store/route';
+import { SearchComponent } from './search/search.component';
 
 interface ReducerState {
   router: fromRouter.routerReducerState;
@@ -38,7 +39,8 @@ export const reducers: ActionReducerMap<ReducerState> = {
     HeaderBarComponent,
     ArticleComponentComponent,
     ArticleComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    SearchComponent
   ],
   imports: [
     CommonModule,

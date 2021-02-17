@@ -7,15 +7,12 @@
     <div class="menu">
       <div class="hamburger fa fa-bars" (click)="onHamburgerClick()"></div>
       <div [class]="menuClass">
-        <ul>
-          <li
-            *ngFor="let nav of navigation"
-            [class]="getClass(nav)"
-            (click)="navigate(nav)"
-          >
-            {{ nav.name }}
-          </li>
-        </ul>
+        <div
+          *ngFor="let nav of navigation"
+          [class]="getClass(nav)"
+          (click)="navigate(nav)"
+          [innerHTML]="nav.name"
+        ></div>
       </div>
     </div>
   </div>

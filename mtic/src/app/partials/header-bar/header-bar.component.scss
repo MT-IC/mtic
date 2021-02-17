@@ -10,7 +10,7 @@
         width: $contentWidth;
         .title {
             display: inline-block;
-            margin: 10px 0;
+            margin: 10px;
             .main {
                 color: $headerFontColor;
                 font-size: 24px;
@@ -25,18 +25,18 @@
             .hamburger {
                 display: none;
             }
-            ul {
-                li {
-                    display: inline-block;
-                    margin-right: 1ex;
-                    padding: 4px;
-                    border-radius: 3px;
-                    line-height: 20px;
-                    cursor: pointer;
-                    &.active {
-                        background-color: $buttonActiveBackgroundColor;
-                        color: $buttonActiveTextColor;
-                    }
+            .menu-item {
+                display: inline-block;
+                margin-right: 1ex;
+                padding: 4px;
+                border-radius: 3px;
+                cursor: pointer;
+                &.active {
+                    background-color: $buttonActiveBackgroundColor;
+                    color: $buttonActiveTextColor;
+                }
+                &::ng-deep abbr {
+                    display: none;
                 }
             }
         }
@@ -95,13 +95,13 @@
                         top: $headerHeightMobile;
                         left: 0;
                         bottom: $footerHeight;
-                        width: 60%;
                         background: $headerBackgroundColor;
+                        padding-left: 10px;
                         z-index: 999;
-                        ul {
-                            padding-inline-start: 10px;
-                            li {
-                                display: block;
+                        .menu-item {
+                            display: block;
+                            &::ng-deep abbr {
+                                display: initial;
                             }
                         }
                     }
@@ -125,22 +125,5 @@
     }
     to {
         -webkit-transform: translateX(0);
-    }
-}
-
-@keyframes close-menu {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-@-webkit-keyframes close-menu {
-    from {
-        -webkit-transform: translateX(0);
-    }
-    to {
-        -webkit-transform: translateX(-100%);
     }
 }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ArticleComponent } from './article/article.component';
 import { ArticlesComponent } from './articles/articles.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   {
@@ -9,15 +10,22 @@ const routes: Routes = [
     component: ArticlesComponent,
     data: {
       category: 'home',
-      activeHeaderButton: 'Home'
+      activeHeaderButton: 'home'
     }
   },
   {
-    path: 'werkervaringen',
+    path: 'experience',
     component: ArticlesComponent,
     data: {
-      category: 'werkervaringen',
-      activeHeaderButton: 'Werkervaringen'
+      category: 'experience',
+      activeHeaderButton: 'experience'
+    }
+  },
+  {
+    path: 'search',
+    component: SearchComponent,
+    data: {
+      activeHeaderButton: 'search'
     }
   },
   {

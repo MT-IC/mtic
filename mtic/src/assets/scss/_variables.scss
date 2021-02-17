@@ -1,5 +1,7 @@
 $fontColor: #525252;
 $headerFontColor: #005d57;
+$headerFontWeight: 500;
+$headerTextAlign: left;
 $headerBackgroundColor: #5a5d5a;
 $headerBackgroundImage: linear-gradient(to bottom,#c2c7c2,#7a847a);
 $headerBackgroundRepeat: repeat-x;
@@ -10,7 +12,7 @@ $headerHeight: 70px;
 $headerHeightMobile: 50px;
 $footerHeight: 60px;
 
-$mobileMaxWidth: 600px;
+$mobileMaxWidth: 700px;
 
 $buttonBorder: 1px solid #005d56;
 $buttonPadding: 3px 15px;

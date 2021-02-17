@@ -20,11 +20,16 @@ body {
 
 @media (max-width: $contentWidth) {
     .content {
-        top: $headerHeightMobile;
         &>div {
             max-width: inherit;
             margin: 0;
             padding: 0 10px;
         }
+    }
+}
+
+@media (max-width: $mobileMaxWidth) {
+    .content {
+        top: $headerHeightMobile;
     }
 }

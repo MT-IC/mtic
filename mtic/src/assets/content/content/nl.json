@@ -3,6 +3,7 @@
         "home": "Home",
         "resume": "CV",
         "experience": "Werkervaringen",
+        "search": "<span class=\"fa fa-search\"></span><abbr> Zoeken</abbr>",
         "previous-article-button-text": "Vorige",
         "next-article-button-text": "Volgende"
     },
@@ -53,7 +54,7 @@
                 "| Nationaliteit | Nederlandse |",
                 "| Vooropleidingen | MAVO, MTS |",
                 "| Vervolgopleidingen | HTS |",
-                "| Afstudeerrichting | Industriële automatisering |",
+                "| Afstudeerrichting | Industri&euml;le automatisering |",
                 "| Talen | Nederlands (moedertaal) |",
                 "| | Engels (gevorderd) |",
                 "",
@@ -120,7 +121,7 @@
             "settings": {
                 "browsable": false,
                 "categoryIndexes": {
-                    "werkervaringen": 1
+                    "experience": 1
                 }
             }
         },
@@ -147,7 +148,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "werkervaringen": 2
+                    "experience": 2
                 }
             }
         },
@@ -173,7 +174,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "werkervaringen": 3
+                    "experience": 3
                 }
             }
         },
@@ -198,7 +199,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "werkervaringen": 4
+                    "experience": 4
                 }
             }
         },
@@ -223,7 +224,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "werkervaringen": 5
+                    "experience": 5
                 }
             }
         },
@@ -248,7 +249,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "werkervaringen": 6
+                    "experience": 6
                 }
             }
         },
@@ -273,7 +274,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "werkervaringen": 7
+                    "experience": 7
                 }
             }
         },
@@ -298,7 +299,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "werkervaringen": 8
+                    "experience": 8
                 }
             }
         },
@@ -323,7 +324,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "werkervaringen": 9
+                    "experience": 9
                 }
             }
         },
@@ -350,7 +351,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "werkervaringen": 10
+                    "experience": 10
                 }
             }
         }

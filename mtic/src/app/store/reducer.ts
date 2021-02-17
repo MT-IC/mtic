@@ -30,7 +30,7 @@ const stateReducer = createReducer<State, Action>(
         fromActions.loadContentSuccess,
         (state, content) => {
             const newContent: Content = {
-                captions: content.content.captions,
+                captions: { ...content.content.captions },
                 articles: content.content.articles.map(a => new Article(a))
             };
             return {

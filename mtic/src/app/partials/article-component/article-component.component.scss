@@ -4,11 +4,6 @@
 .article-component {
     color: $fontColor;
     text-align: justify;
-    h1, h2, h3 {
-        color: $headerFontColor;
-        font-weight: 500;
-        text-align: left;
-    }
 }
 
 .tables-without-headers {
@@ -22,8 +17,8 @@
 markdown ::ng-deep {
     h1, h2, h3 {
         color: $headerFontColor;
-        font-weight: 500;
-        text-align: left;
+        font-weight: $headerFontWeight;
+        text-align: $headerTextAlign;
     }
 
     td {

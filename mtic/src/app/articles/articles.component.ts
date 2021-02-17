@@ -25,6 +25,5 @@ export class ArticlesComponent extends BaseComponent implements OnInit {
 
   ngOnInit(): void {
     this.subscribe(this.articles$);
-    this.store.dispatch(actions.loadContent());
   }
 }

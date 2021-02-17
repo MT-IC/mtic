@@ -1,5 +1,11 @@
 @import './variables';
 
+h1, h2, h3 {
+    color: $headerFontColor;
+    font-weight: $headerFontWeight;
+    text-align: $headerTextAlign;
+}
+
 .nav-btn {
     padding: $buttonPadding;
     border: $buttonBorder;
