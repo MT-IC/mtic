@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { BaseComponent } from './base/component.base';
+import { BaseComponent } from './_base/component.base';
 import * as actions from './store/actions';
 
 @Component({

@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { BaseComponent } from '../base/component.base';
+import { BaseComponent } from '../_base/component.base';
 import * as selectors from '../store/selectors';
-import * as actions from '../store/actions';
 import { filter, withLatestFrom } from 'rxjs/operators';
 import { Article } from '../store/models/article.model';
 import { Router } from '@angular/router';

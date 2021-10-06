@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { filter, take, tap } from 'rxjs/operators';
-import { BaseComponent } from 'src/app/base/component.base';
+import { BaseComponent } from 'src/app/_base/component.base';
 import { Navigation } from 'src/app/_models/navigation.interface';
 import * as selectors from '../../store/selectors';
 import * as actions from '../../store/actions';
