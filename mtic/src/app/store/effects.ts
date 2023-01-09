@@ -29,6 +29,25 @@ export class Effects {
             })
         )
     );
+
+    searchArticles$ = createEffect(() =>
+        this.actions$.pipe(
+            ofType(actions.search),
+            withLatestFrom(this.store.select(selectors.getArticles)),
+            filter(([_, articles]) => !!articles),
+            exhaustMap(([{ search }, articles]) => {
+                const terms = search.toLowerCase().split(' ').filter(t => t.length);
+                const result = (articles || [])
+                    .filter(a =>
+                        a.settings.browsable &&
+                        !a.settings.hidden &&
+                        terms.every(t => 
+                            a.content.toLowerCase().includes(t) || 
+                            (a.tags && a.tags.some(x => x.toLowerCase() === t))));
+                return of(actions.searchResult({ articles: result }));
+            })
+        )
+    );
 }
 
 export const effects: any[] = [Effects];

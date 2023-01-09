@@ -28,10 +28,10 @@
         },
         {
             "id": "beschikbaar",
-            "title": "Beschikbaar per 1 september 2020",
+            "title": "Beschikbaar per 1 maart 2023",
             "content": [""],
             "settings": {
-                "hidden": true,
+                "hidden": false,
                 "categoryIndexes": {
                     "home": 0
                 }
@@ -121,7 +121,34 @@
             "settings": {
                 "browsable": false,
                 "categoryIndexes": {
-                    "experience": 1
+                    "experience": -99
+                }
+            }
+        },
+        {
+            "id": "uitbreiding-en-onderhoud-web-applicaties",
+            "title": "Uitbreiding en onderhoud web applicaties",
+            "tags": [".NET","EntityFramework","SQL Server","Azure","ARM templates","Angular","NGRX","SCSS","CI/CD","YAML pipelines"],
+            "content": [
+                "Juli 2020 tot heden - Het uitbreiden, aanpassen en onderhouden van web applicaties met een .NET backend en SQL Server databases.",
+                "--readmore--",
+                "Tags:<br/>",
+                ".NET - SQL Server - MVC - EntityFrameworkCore - Scrum",
+                "## Situatie",
+                "Na mijn eerdere periode bij deze opdrachtgever zijn de meeste apps omgebouwd naar Angular en ook de backends zijn aangepakt om ze naar Azure te brengen. Ik vul een klein team aan dat bestaat uit aparte front- en backend ontwikkelaars. Er zijn integraties met het Sap ERP systeem en externe tools.",
+                "## Taken",
+                "Binnen enkele maanden nadat ik gestart ben verlaten de meeste teamleden de opdrachtgever en wordt er een nieuwe teamleider aangesteld. Ook komt er een extra .NET ontwikkelaar bij. Ik houd mij bezig met zowel front- als backend ontwikkeling, zowel uitbreiding/bugfixing op bestaande applicaties als het bouwen van nieuwe. Ook doen we DevOps op bestaande applicaties en ondersteunen gebruikers bij problemen. Ik voer regelmatig wijzigingen door in de CI/CD pipelines, zoals de ARM templates en we implementeren YAML pipelines. Als er een project wordt gestart voor een nieuw ERP landschap waarbij de doelstelling is om de meeste apps te vervangen, richt ik me op integraties die een geleidelijke overgang mogelijk maken.",
+                "Tijdens dit project ben ik scrum-master geweest.",
+                "## Aanpak",
+                "We organiseren ons werk middels Azure DevOps work items in sprints, maar van een echte scrum werkwijze is geen sprake. Binnen Azure maken we onder meer gebruik van Application Insights, ServiceBus en Key Vaults.",
+                "## Resultaat",
+                "We hebben een uitgebreid en krachtig applicatie landschap dat de processen bij de opdrachtgever optimaal ondersteunt."
+            ],
+            "settings": {
+                "nextButtonText": "Ouder",
+                "previousButtonText": "Nieuwer",
+                "categoryIndexes": {
+                    "experience": -10
                 }
             }
         },
@@ -148,7 +175,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "experience": 2
+                    "experience": -9
                 }
             }
         },
@@ -174,7 +201,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "experience": 3
+                    "experience": -8
                 }
             }
         },
@@ -199,7 +226,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "experience": 4
+                    "experience": -7
                 }
             }
         },
@@ -224,7 +251,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "experience": 5
+                    "experience": -6
                 }
             }
         },
@@ -249,7 +276,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "experience": 6
+                    "experience": -5
                 }
             }
         },
@@ -274,7 +301,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "experience": 7
+                    "experience": -4
                 }
             }
         },
@@ -299,7 +326,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "experience": 8
+                    "experience": -3
                 }
             }
         },
@@ -324,7 +351,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "experience": 9
+                    "experience": -2
                 }
             }
         },
@@ -351,7 +378,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "experience": 10
+                    "experience": -1
                 }
             }
         }

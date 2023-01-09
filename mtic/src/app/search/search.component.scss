@@ -1,1 +1,9 @@
-@import '../../assets/scss/main.scss'
+@import '../../assets/scss/main.scss';
+
+div.suggestions a {
+    margin-left: 1ex;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}

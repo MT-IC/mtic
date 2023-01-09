@@ -71,6 +71,29 @@ export const getPreviousRouterArticle = createSelector(
             : undefined;
     });
 
+export const getSearchSuggestions = createSelector(
+    getArticles,
+    (articles: Article[] | undefined) => {
+        if (!articles || !articles.length) {
+            return [];
+        }
+
+        const maxLength = 10;
+        const result: string[] = [];
+        for (const a of articles.filter(x => x.tags)) {
+            for (const t of a.tags) {
+                if (!result.includes(t)) {
+                    result.push(t);
+                    if (result.length >= maxLength) {
+                        return result;
+                    }
+                }
+            }
+        }
+        return result;
+    }
+);
+
 const notFoundArticle: Article = {
     id: 'not-found',
     title: 'Niet gevonden',
