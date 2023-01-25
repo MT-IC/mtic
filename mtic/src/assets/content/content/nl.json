@@ -12,28 +12,31 @@
             "id": "welkom",
             "title": "Welkom",
             "content": [
-                "<p class=\"align-center\"><img width=\"158\" src=\"/assets/content/images/marcel-small.jpg\"/></p>",
+                "<p class=\"align-center\"><img width=\"200\" class=\"img-circular\" src=\"/assets/content/images/marcel.jpg\"/></p>",
                 "Ik ben een gedreven freelance software ontwikkelaar uit Apeldoorn (Gelderland) met ruime ervaring in vele disciplines. Zowel zelfstandig als in teamverband maak ik een verschil door nauwkeurig en gestructureerd te werken, maar ook buiten de gebaande paden te denken, kritisch te zijn ten aanzien van werkwijzen en procedures en oplossingen voor te stellen die efficiënt en schaalbaar zijn. Mijn houding is klantgericht en collegiaal.",
                 "Op deze website en op LinkedIn zal ik aangeven wanneer ik beschikbaar ben voor een opdracht. Indien u op de hoogte gesteld wilt worden zodra ik beschikbaar ben of u wilt informeren naar mijn beschikbaarheid voor een opdracht, stuurt u mij daarover dan een e-mail.",
                 "Met vriendelijke groeten,",
                 "Marcel Timmerman<br/>[info@marceltimmerman.nl](mailto:info@marceltimmerman.nl)<br/>[+31 (0) 6 250 67 250](tel://+31625067250)<br/>Registratie Handelsregister: 54227593 KvK Oost Nederland",
-                "<p class=\"align-right\"><a href=\"http://nl.linkedin.com/in/marceltimmerman\" target=\"blank\"><img src=\"/assets/content/images/btn_liprofile_blue_80x15.png\"></a></p>"
+                "<p class=\"align-right\"><img src=\"/assets/content/images/pdf.png\"> <a href=\"https://www.dropbox.com/s/jabyus5i1ahclpj/Curriculum%20Vitae%20Marcel%20Timmerman.pdf?dl=1\" target=\"self\">Download CV</a> (pdf)</p>",
+                "<p class=\"align-right\"><a href=\"https://nl.linkedin.com/in/marceltimmerman\" target=\"blank\"><img src=\"/assets/content/images/btn_liprofile_blue_80x15.png\"></a></p>"
             ],
             "settings": {
                 "showTitle": false,
                 "categoryIndexes": {
-                    "home": 1
+                    "home": 0
                 }
             }
         },
         {
             "id": "beschikbaar",
             "title": "Beschikbaar per 1 maart 2023",
-            "content": [""],
+            "content": [
+                "Ik ben op zoek naar een nieuw full-time project, een paar dagen per week op kantoor binnen een uur rijden vanaf Apeldoorn. Ik werk graag met Scrum, Azure en Angular. Mocht u iemand zoeken, neem dan contact met me op."
+            ],
             "settings": {
                 "hidden": false,
                 "categoryIndexes": {
-                    "home": 0
+                    "home": 1
                 }
             }
         },

@@ -31,6 +31,13 @@ export class SearchComponent extends BaseComponent implements OnInit {
     this.subscribe(
       this.store.select(selectors.getSearchSuggestions),
       (result) => this.suggestions = result);
+
+    this.subscribe(
+      this.store.select(selectors.getArticles).pipe(
+        filter((articles) => !!articles && !!articles.length)
+      ),
+      () => this.store.dispatch(search({ search: this.searchControl.value })));
+
     this.subscribe(
       this.searchControl.valueChanges,
       (searchText) => {
@@ -42,12 +49,16 @@ export class SearchComponent extends BaseComponent implements OnInit {
           });
       }
     );
+
     this.subscribe(
       this.actions.pipe(
         ofType(searchResult),
       ),
-      ({articles}) => this.articles = articles
+      ({articles}) => {
+        this.articles = articles;
+      }
     );
+
     this.subscribe(
       this.activatedRoute.queryParams.pipe(
         filter((params: Params) => params && params.q),
@@ -70,5 +81,19 @@ export class SearchComponent extends BaseComponent implements OnInit {
     }
 
     this.searchControl.setValue(currentSearch ? currentSearch + ' ' + suggestion : suggestion);
+  }
+
+  getPreview(article: Article): string {
+    let pos = 1;
+    const c = article.cleanContent;
+    while (c.substring(pos, pos + 3) === 'NET' || (pos !== 0 && pos < 100)) {
+      pos = c.indexOf('.', pos) + 1;
+    }
+
+    return pos <= 0 ? '' : c.substring(0, pos);
+  }
+
+  clear(): void {
+    this.searchControl.setValue(null);
   }
 }

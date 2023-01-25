@@ -24,19 +24,23 @@
             display: inline-block;
             .hamburger {
                 display: none;
-            }
-            .menu-item {
-                display: inline-block;
-                margin-right: 1ex;
-                padding: 4px;
-                border-radius: 3px;
                 cursor: pointer;
-                &.active {
-                    background-color: $buttonActiveBackgroundColor;
-                    color: $buttonActiveTextColor;
-                }
-                &::ng-deep abbr {
-                    display: none;
+            }
+            .menu-items {
+                padding-top: 1em;
+                .menu-item {
+                    display: inline-block;
+                    margin-right: 1ex;
+                    padding: 4px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    &.active {
+                        background-color: $buttonActiveBackgroundColor;
+                        color: $buttonActiveTextColor;
+                    }
+                    &::ng-deep abbr {
+                        display: none;
+                    }
                 }
             }
         }

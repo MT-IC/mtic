@@ -1,12 +1,21 @@
 <h1>Zoeken</h1>
 <div>
-    <input type="text" [formControl]="searchControl" />
+    <input type="text" [formControl]="searchControl" />&nbsp;<a *ngIf="searchControl.value" class="clear" (click)="clear()">X</a>
 </div>
 <div class="suggestions" *ngIf="suggestions && suggestions.length">
-    Suggesties: <a *ngFor="let suggestion of suggestions" (click)="suggest(suggestion)">{{suggestion}}</a>
+    <div class="head">
+        Suggesties: 
+    </div>
+    <a *ngFor="let suggestion of suggestions" (click)="suggest(suggestion)">{{suggestion}}</a>
 </div>
-<div *ngIf="articles && articles.length">
-    <div *ngFor="let article of articles">
-        <a routerLink="/article/{{ article.id }}">{{ article.title }}</a>
+<div class="result" *ngIf="articles && articles.length">
+    <div class="head">
+        Zoekresultaten
+    </div>
+    <div class="item" *ngFor="let article of articles">
+        <p>
+            <a routerLink="/article/{{ article.id }}">{{ article.title }}</a>
+        </p>
+        <p>{{ getPreview(article) }}</p>
     </div>
 </div>

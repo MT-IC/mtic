@@ -1,9 +1,31 @@
 @import '../../assets/scss/main.scss';
 
-div.suggestions a {
-    margin-left: 1ex;
+.clear {
+    font-weight: bold;
     cursor: pointer;
-    &:hover {
-        text-decoration: underline;
+}
+
+.suggestions {
+    .head {
+        margin-top: 1em;
+        font-size: 120%;
+    }
+    a {
+        margin-right: 1ex;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.result {
+    .head {
+        margin-top: 1em;
+        font-size: 120%;
+    }
+    .item {
+        border-top: solid 1px #bcc2bc;
+        margin-top: 1em;
     }
 }

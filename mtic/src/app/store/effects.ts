@@ -2,15 +2,16 @@ import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { Service } from '../app.service';
 import * as actions from './actions';
-import { map, catchError, exhaustMap, withLatestFrom, filter, tap } from 'rxjs/operators';
+import { map, catchError, exhaustMap, withLatestFrom, filter } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
 import { Store } from '@ngrx/store';
 import * as selectors from './selectors';
 import { Content } from './models/content.model';
+import { ActivatedRoute } from '@angular/router';
 
 @Injectable()
 export class Effects {
-    constructor(private actions$: Actions, private store: Store, private service: Service) {}
+    constructor(private actions$: Actions, private store: Store, private service: Service, private activatedRoute: ActivatedRoute) {}
 
     loadContent$ = createEffect(() =>
         this.actions$.pipe(
@@ -33,16 +34,22 @@ export class Effects {
     searchArticles$ = createEffect(() =>
         this.actions$.pipe(
             ofType(actions.search),
-            withLatestFrom(this.store.select(selectors.getArticles)),
+            withLatestFrom(
+                this.store.select(selectors.getArticles),
+                this.activatedRoute.queryParams),
             filter(([_, articles]) => !!articles),
-            exhaustMap(([{ search }, articles]) => {
+            exhaustMap(([_, articles, params]) => {
+                const search: string = params.q || '';
                 const terms = search.toLowerCase().split(' ').filter(t => t.length);
+                if (terms.length === 0) {
+                    return [];
+                }
                 const result = (articles || [])
                     .filter(a =>
                         a.settings.browsable &&
                         !a.settings.hidden &&
-                        terms.every(t => 
-                            a.content.toLowerCase().includes(t) || 
+                        terms.every(t =>
+                            a.cleanContent.toLowerCase().includes(t) ||
                             (a.tags && a.tags.some(x => x.toLowerCase() === t))));
                 return of(actions.searchResult({ articles: result }));
             })

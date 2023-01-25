@@ -98,6 +98,7 @@ const notFoundArticle: Article = {
     id: 'not-found',
     title: 'Niet gevonden',
     content: '',
+    cleanContent: '',
     class: null,
     tags: [],
     settings: new ArticleSettings()
