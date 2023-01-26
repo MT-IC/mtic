@@ -14,5 +14,11 @@
         display: table-cell;
         text-align: center;
         vertical-align: middle;
+        &.footer-side {
+            color: white;
+            font-size: 80%;
+            font-weight: 500;
+            width: 10ex;
+        }
     }
 }

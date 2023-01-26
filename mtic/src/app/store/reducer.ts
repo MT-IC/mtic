@@ -3,7 +3,6 @@ import { State } from './models/state.model';
 import * as fromActions from './actions';
 import { Content } from './models/content.model';
 import { Article } from './models/article.model';
-import { ArticleSettings } from './models/articleSettings.model';
 import { routerNavigatedAction } from './route';
 
 const initialState = new State();

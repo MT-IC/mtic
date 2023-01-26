@@ -37,7 +37,15 @@ export class HeaderBarComponent extends BaseComponent implements OnInit {
       id: 'search',
       name: '<span class=\"fa fa-search\"></span>',
       path: '/search',
-      class: ''
+      class: '',
+      title: 'Zoeken'
+    },
+    {
+      id: 'download-cv',
+      name: '<span class=\"fa fa-download\"></span>',
+      path: '',
+      class: '',
+      title: 'Download CV'
     }
   ];
   menuClass = 'menu-items';
@@ -77,7 +85,9 @@ export class HeaderBarComponent extends BaseComponent implements OnInit {
 
   navigate(nav: Navigation): void {
     this.store.dispatch(actions.menuItemSelected({ name: nav.id || '' }));
-    this.router.navigate([nav.path]);
+    if (nav.path) {
+      this.router.navigate([nav.path]);
+    }
     this.menuClass = 'menu-items';
   }
 

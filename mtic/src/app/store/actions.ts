@@ -8,6 +8,7 @@ export const loadContentSuccess = createAction('[Content] Load Content Success',
 export const loadContentFailure = createAction('[Content] Load Content Failure', props<{ error: any }>());
 
 export const menuItemSelected = createAction('[Navigation] Menu Item Selected', props<{ name: string }>());
+export const menuItemSelectionDone = createAction('[Navigation] Menu Item Selection Done');
 
 export const search = createAction('[Search] Search text changed', props<{ search: string }>());
 export const searchResult = createAction('[Search] Search result', props<{ articles: Article[] }>());

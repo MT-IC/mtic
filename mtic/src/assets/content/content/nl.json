@@ -4,8 +4,10 @@
         "resume": "CV",
         "experience": "Werkervaringen",
         "search": "<span class=\"fa fa-search\"></span><abbr> Zoeken</abbr>",
+        "download-cv": "<span class=\"fa fa-download\"></span><abbr> Download CV</abbr>",
         "previous-article-button-text": "Vorige",
-        "next-article-button-text": "Volgende"
+        "next-article-button-text": "Volgende",
+        "download-cv-url": "https://www.dropbox.com/s/jabyus5i1ahclpj/Curriculum%20Vitae%20Marcel%20Timmerman.pdf?dl=1"
     },
     "articles": [
         {
@@ -16,7 +18,7 @@
                 "Ik ben een gedreven freelance software ontwikkelaar uit Apeldoorn (Gelderland) met ruime ervaring in vele disciplines. Zowel zelfstandig als in teamverband maak ik een verschil door nauwkeurig en gestructureerd te werken, maar ook buiten de gebaande paden te denken, kritisch te zijn ten aanzien van werkwijzen en procedures en oplossingen voor te stellen die efficiënt en schaalbaar zijn. Mijn houding is klantgericht en collegiaal.",
                 "Op deze website en op LinkedIn zal ik aangeven wanneer ik beschikbaar ben voor een opdracht. Indien u op de hoogte gesteld wilt worden zodra ik beschikbaar ben of u wilt informeren naar mijn beschikbaarheid voor een opdracht, stuurt u mij daarover dan een e-mail.",
                 "Met vriendelijke groeten,",
-                "Marcel Timmerman<br/>[info@marceltimmerman.nl](mailto:info@marceltimmerman.nl)<br/>[+31 (0) 6 250 67 250](tel://+31625067250)<br/>Registratie Handelsregister: 54227593 KvK Oost Nederland",
+                "Marcel Timmerman<br/>[info@marceltimmerman.nl](mailto:info@marceltimmerman.nl)<br/>[+31 (0) 6 250 67 250](tel:+31%206%20250%2067%20250)<br/>Registratie Handelsregister: 54227593 KvK Oost Nederland",
                 "<p class=\"align-right\"><img src=\"/assets/content/images/pdf.png\"> <a href=\"https://www.dropbox.com/s/jabyus5i1ahclpj/Curriculum%20Vitae%20Marcel%20Timmerman.pdf?dl=1\" target=\"self\">Download CV</a> (pdf)</p>",
                 "<p class=\"align-right\"><a href=\"https://nl.linkedin.com/in/marceltimmerman\" target=\"blank\"><img src=\"/assets/content/images/btn_liprofile_blue_80x15.png\"></a></p>"
             ],
@@ -31,7 +33,7 @@
             "id": "beschikbaar",
             "title": "Beschikbaar per 1 maart 2023",
             "content": [
-                "Ik ben op zoek naar een nieuw full-time project, een paar dagen per week op kantoor binnen een uur rijden vanaf Apeldoorn. Ik werk graag met Scrum, Azure en Angular. Mocht u iemand zoeken, neem dan contact met me op."
+                "Ik ben op zoek naar een nieuw full-time project, een paar dagen per week op kantoor binnen een uur rijden vanaf Apeldoorn. Ik werk graag met Scrum, Azure en Angular, maar dat is geen vereiste. Mocht u iemand zoeken, neem dan contact met me op."
             ],
             "settings": {
                 "hidden": false,
@@ -74,7 +76,7 @@
                 "### Methoden",
                 "Agile, Scrum <i class=\"senior\"></i><br/>",
                 "Object Oriented <i class=\"senior\"></i><br/>",
-                "SOA <i class=\"senior\"></i><br/>",
+                "Service Oriented Architecture <i class=\"senior\"></i><br/>",
                 "### Technieken/platforms",
                 "Microsoft Azure <i class=\"medior\"></i><br/>",
                 "EntityFramework <i class=\"senior\"></i><br/>",
@@ -95,7 +97,7 @@
                 "Microsoft Office (Word, Excel, Access) <i class=\"senior\"></i><br/>",
                 "",
                 "## Persoonlijk/vrije tijd",
-                "Ik ben getrouwd en heb twee kinderen. Ik ben niet actief op social media maar doe mijn best om Jezus te volgen en ga elke zondag naar de kerk, waarvoor ik ook vrijwilligerswerk doe. Ik speel volleybal op recreatief niveau. Verder klus ik graag rondom het huis en geniet van de buitenlucht en de natuur."
+                "Ik ben getrouwd en heb twee kinderen. Ik ben niet erg actief op social media maar doe mijn best om Jezus te volgen en ga elke zondag naar de kerk, waarvoor ik ook vrijwilligerswerk doe. Ik speel volleybal op recreatief niveau. Verder klus ik graag rondom het huis en geniet van de buitenlucht en de natuur."
             ]
         },
         {
@@ -131,17 +133,16 @@
         {
             "id": "uitbreiding-en-onderhoud-web-applicaties",
             "title": "Uitbreiding en onderhoud web applicaties",
-            "tags": [".NET","EntityFramework","SQL Server","Azure","ARM templates","Angular","NGRX","SCSS","CI/CD","YAML pipelines"],
+            "tags": [".NET","EntityFramework","SQL Server","Azure","ARM templates","Angular","NGRX","SCSS","CI/CD","YAML pipelines","Scrum"],
             "content": [
                 "Juli 2020 tot heden - Het uitbreiden, aanpassen en onderhouden van web applicaties met een .NET backend en SQL Server databases.",
                 "--readmore--",
                 "Tags:<br/>",
-                ".NET - SQL Server - MVC - EntityFrameworkCore - Scrum",
+                ".NET - EntityFramework - SQL Server - Azure - ARM templates - Angular - NGRX - SCSS - CI/CD - YAML pipelines - Scrum",
                 "## Situatie",
                 "Na mijn eerdere periode bij deze opdrachtgever zijn de meeste apps omgebouwd naar Angular en ook de backends zijn aangepakt om ze naar Azure te brengen. Ik vul een klein team aan dat bestaat uit aparte front- en backend ontwikkelaars. Er zijn integraties met het Sap ERP systeem en externe tools.",
                 "## Taken",
                 "Binnen enkele maanden nadat ik gestart ben verlaten de meeste teamleden de opdrachtgever en wordt er een nieuwe teamleider aangesteld. Ook komt er een extra .NET ontwikkelaar bij. Ik houd mij bezig met zowel front- als backend ontwikkeling, zowel uitbreiding/bugfixing op bestaande applicaties als het bouwen van nieuwe. Ook doen we DevOps op bestaande applicaties en ondersteunen gebruikers bij problemen. Ik voer regelmatig wijzigingen door in de CI/CD pipelines, zoals de ARM templates en we implementeren YAML pipelines. Als er een project wordt gestart voor een nieuw ERP landschap waarbij de doelstelling is om de meeste apps te vervangen, richt ik me op integraties die een geleidelijke overgang mogelijk maken.",
-                "Tijdens dit project ben ik scrum-master geweest.",
                 "## Aanpak",
                 "We organiseren ons werk middels Azure DevOps work items in sprints, maar van een echte scrum werkwijze is geen sprake. Binnen Azure maken we onder meer gebruik van Application Insights, ServiceBus en Key Vaults.",
                 "## Resultaat",

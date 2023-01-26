@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { Service } from '../app.service';
 import * as actions from './actions';
-import { map, catchError, exhaustMap, withLatestFrom, filter } from 'rxjs/operators';
-import { Observable, of } from 'rxjs';
+import { map, catchError, exhaustMap, withLatestFrom, filter, tap } from 'rxjs/operators';
+import { empty, Observable, of } from 'rxjs';
 import { Store } from '@ngrx/store';
 import * as selectors from './selectors';
 import { Content } from './models/content.model';
@@ -52,6 +52,18 @@ export class Effects {
                             a.cleanContent.toLowerCase().includes(t) ||
                             (a.tags && a.tags.some(x => x.toLowerCase() === t))));
                 return of(actions.searchResult({ articles: result }));
+            })
+        )
+    );
+
+    downloadCv$ = createEffect(() =>
+        this.actions$.pipe(
+            ofType(actions.menuItemSelected),
+            withLatestFrom(this.store.select(selectors.getCaptions)),
+            filter(([{ name }] ) => name === 'download-cv'),
+            exhaustMap(([_, captions]) => {
+                window.open(captions['download-cv-url']);
+                return of(actions.menuItemSelectionDone());
             })
         )
     );

@@ -10,7 +10,8 @@ const routes: Routes = [
     component: ArticlesComponent,
     data: {
       category: 'home',
-      activeHeaderButton: 'home'
+      activeHeaderButton: 'home',
+      codeUrl: 'https://github.com/MT-IC/mtic/blob/master/mtic/src/app/articles/articles.component.html'
     }
   },
   {
@@ -18,19 +19,24 @@ const routes: Routes = [
     component: ArticlesComponent,
     data: {
       category: 'experience',
-      activeHeaderButton: 'experience'
+      activeHeaderButton: 'experience',
+      codeUrl: 'https://github.com/MT-IC/mtic/blob/master/mtic/src/app/articles/articles.component.html'
     }
   },
   {
     path: 'search',
     component: SearchComponent,
     data: {
-      activeHeaderButton: 'search'
+      activeHeaderButton: 'search',
+      codeUrl: 'https://github.com/MT-IC/mtic/blob/master/mtic/src/app/search/search.component.ts'
     }
   },
   {
     path: 'article/:articleId',
-    component: ArticleComponent
+    component: ArticleComponent,
+    data: {
+      codeUrl: 'https://github.com/MT-IC/mtic/blob/master/mtic/src/app/article/article.component.html'
+    }
   },
 ];
 

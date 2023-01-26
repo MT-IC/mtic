@@ -1,3 +1,9 @@
 <div class="footer-bar">
+    <div class="footer-side" *ngIf="!!codeUrl">&nbsp;</div>
     <div>Copyright &copy; {{ year }} Marcel Timmerman</div>
+    <div class="footer-side" *ngIf="!!codeUrl">
+        Nerd?<br/>
+        Check out<br/>
+        <a [href]="codeUrl" target="_blank">the code</a>
+    </div>
 </div>

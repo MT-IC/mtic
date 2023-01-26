@@ -23,6 +23,10 @@ export const getCategoryArticles = createSelector(
     (articles, data) =>
     getArticlesByCategory(articles, data?.category));
 
+export const getCodeUrl = createSelector(
+    selectRouteData,
+    (data) => data?.codeUrl);
+
 export const getRouterArticleId = createSelector(selectRouteParam('articleId'), (articleId) =>
     typeof articleId === 'string' ? articleId : null);
 
