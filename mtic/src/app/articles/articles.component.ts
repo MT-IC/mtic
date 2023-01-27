@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { BaseComponent } from '../_base/component.base';
 import { Article } from '../store/models/article.model';
 import * as selectors from '../store/selectors';

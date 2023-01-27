@@ -13,4 +13,4 @@ export const getContent: (content: any) => string = ((content: any): string => {
     return result;
 });
 
-export const cleanupContent: (content: any) => string = ((content: any): string => content.replace(/#|\<[^\>]*\>|--readmore--|\|/g, ''));
+export const cleanupContent: (content: any) => string = ((content: any): string => content.replace(/#|\<[^\>]*\>|--readmore--|&[^;]*;|\|/g, ''));

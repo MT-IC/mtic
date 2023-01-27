@@ -10,6 +10,6 @@ export class Service {
     constructor(private httpClient: HttpClient) {}
 
     loadContent(): Observable<Content> {
-        return this.httpClient.get<Content>('/assets/content/content/nl.json');
+        return this.httpClient.get<Content>(`/assets/content/content/nl.json?${new Date().getTime()}`);
     }
 }
