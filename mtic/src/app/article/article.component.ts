@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterContentChecked, Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { BaseComponent } from '../_base/component.base';
 import * as selectors from '../store/selectors';
@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.scss']
 })
-export class ArticleComponent extends BaseComponent implements OnInit {
+export class ArticleComponent extends BaseComponent implements OnInit, AfterContentChecked {
   article$ = this.store.select(selectors.getRouterArticle).pipe(
     filter(a => !!a)
   );
@@ -42,6 +42,14 @@ export class ArticleComponent extends BaseComponent implements OnInit {
         this.nextArticleButtonText = article.settings.nextButtonText || this.previousArticleButtonText;
       }
     });
+  }
+
+  ngAfterContentChecked(): void {
+    Array.prototype.forEach.apply(document.links, [function(link) {
+      if (link.hostname != window.location.hostname && !link.attributes.target) {
+        link.setAttribute('target', '_blank');
+      }
+    }]);
   }
 
   to(article: Article): void {

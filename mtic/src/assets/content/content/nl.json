@@ -69,22 +69,21 @@
                 "",
                 "### Programmeertalen",
                 "C#.NET <i class=\"senior\"></i><br/>",
-                "Regular Expressions <i class=\"senior\"></i><br/>",
-                "HTML, CSS, SASS <i class=\"senior\"></i><br/>",
-                "XML, XSD, XSLT, XPath <i class=\"senior\"></i><br/>",
-                "JavaScript / TypeScript <i class=\"medior\"></i><br/>",
                 "SQL <i class=\"senior\"></i><br/>",
+                "HTML, CSS, SASS <i class=\"senior\"></i><br/>",
+                "JavaScript / TypeScript <i class=\"medior\"></i><br/>",
+                "Regular Expressions <i class=\"senior\"></i><br/>",
                 "### Methoden",
                 "Agile, Scrum <i class=\"senior\"></i><br/>",
                 "Object Oriented <i class=\"senior\"></i><br/>",
                 "Service Oriented Architecture <i class=\"senior\"></i><br/>",
                 "### Technieken/platforms",
-                "Microsoft Azure <i class=\"medior\"></i><br/>",
+                "Microsoft Azure <i class=\"senior\"></i><br/>",
                 "EntityFramework <i class=\"senior\"></i><br/>",
                 "Linq / LinqToSql / LinqToEntities <i class=\"senior\"></i><br/>",
                 "Angular / NGRX <i class=\"medior\"></i><br/>",
-                "ASP.NET <i class=\"senior\"></i><br/>",
                 "MVC <i class=\"senior\"></i><br/>",
+                "XML, XSD, XSLT, XPath <i class=\"medior\"></i><br/>",
                 "Ajax <i class=\"senior\"></i><br/>",
                 "Specflow (Gherkin) <i class=\"medior\"></i><br/>",
                 "### Database",
@@ -92,7 +91,7 @@
                 "### Tools",
                 "Visual Studio / Visual Studio Code <i class=\"senior\"></i><br/>",
                 "Git / Bitbucket / SVN <i class=\"senior\"></i><br/>",
-                "TeamCity / Octopus <i class=\"senior\"></i><br/>",
+                "TeamCity / Octopus <i class=\"medior\"></i><br/>",
                 "Atlassian Jira <i class=\"medior\"></i><br/>",
                 "Azure DevOps <i class=\"senior\"></i><br/>",
                 "Microsoft Office (Word, Excel, Access) <i class=\"senior\"></i><br/>",
@@ -132,22 +131,29 @@
             }
         },
         {
-            "id": "uitbreiding-en-onderhoud-web-applicaties",
-            "title": "Uitbreiding en onderhoud web applicaties",
-            "tags": [".NET","EntityFramework","SQL Server","Azure","ARM templates","Angular","NGRX","SCSS","CI/CD","YAML pipelines","Scrum"],
+            "id": "graphql-bibliotheek",
+            "title": "Het bouwen van een GraphQL bibliotheek",
+            "tags": [
+                ".NET",
+                ".NetStandard",
+                "NuGet",
+                "Expressions",
+                "Expression trees",
+                "Web API"
+            ],
             "content": [
-                "Juli 2020 tot heden - Het uitbreiden, aanpassen en onderhouden van web applicaties met een .NET backend en SQL Server databases.",
+                "Mei 2023 tot januari 2024 - Het ontwerpen, bouwen en testen van een [server](https://www.nuget.org/packages/Mt.GraphQL.Api.Server) en een [client](https://www.nuget.org/packages/Mt.GraphQL.Api.Client) bibliotheek voor het gebruik van [GraphUI](https://learn.microsoft.com/en-us/graph/query-parameters) in een API. ",
                 "--readmore--",
                 "Tags:<br/>",
-                ".NET - EntityFramework - SQL Server - Azure - ARM templates - Angular - NGRX - SCSS - CI/CD - YAML pipelines - Scrum",
+                ".NET - .NetStandard - Web API - NuGet - Expressions - Expression trees",
                 "## Situatie",
-                "Na mijn eerdere periode bij deze opdrachtgever zijn de meeste apps omgebouwd naar Angular en ook de backends zijn aangepakt om ze naar Azure te brengen. Ik vul een klein team aan dat bestaat uit aparte front- en backend ontwikkelaars. Er zijn integraties met het Sap ERP systeem en externe tools.",
+                "Door behoefte aan een technische uitdaging ben ik begonnen aan de ontwikkeling van deze bibliotheken. Via GraphQL geef je in een request onderdelen door die je ook tegenkomt in een SQL query of een Linq expressie voor EntityFramework. Het leek me mooi een client bibliotheek te ontwikkelen die het mogelijk maakt om met Linq-achtige expressies een request op te stellen, en een server bibliotheek die dat request omzet in een Linq query.",
                 "## Taken",
-                "Binnen enkele maanden nadat ik gestart ben verlaten de meeste teamleden de opdrachtgever en wordt er een nieuwe teamleider aangesteld. Ook komt er een extra .NET ontwikkelaar bij. Ik houd mij bezig met zowel front- als backend ontwikkeling, zowel uitbreiding/bugfixing op bestaande applicaties als het bouwen van nieuwe. Ook doen we DevOps op bestaande applicaties en ondersteunen gebruikers bij problemen. Ik voer regelmatig wijzigingen door in de CI/CD pipelines, zoals de ARM templates en we implementeren YAML pipelines. Als er een project wordt gestart voor een nieuw ERP landschap waarbij de doelstelling is om de meeste apps te vervangen, richt ik me op integraties die een geleidelijke overgang mogelijk maken.",
+                "Het ontwerpen, implementeren en testen van de bibliotheken.",
                 "## Aanpak",
-                "We organiseren ons werk middels Azure DevOps work items in sprints, maar van een echte scrum werkwijze is geen sprake. Binnen Azure maken we onder meer gebruik van Application Insights, ServiceBus en Key Vaults.",
+                "Door te baseren op .NetStandard zijn de bibliotheken toepasbaar voor alle .NET versies. Ik heb een aantal taken aangemaakt en die ben ik stuk voor stuk gaan ontwikkelen, waarbij ik ook tests heb gebouwd ter ondersteuning van de bouw en om de correcte werking te bewaken. Met name het bouwen van runtime classes voor de in het request gevraagde datatype, en het bouwen van Linq expressies daarop, bleek uitdagend.",
                 "## Resultaat",
-                "We hebben een uitgebreid en krachtig applicatie landschap dat de processen bij de opdrachtgever optimaal ondersteunt."
+                "Momenteel staan de bibliotheken als packages [in de NuGet repository](https://www.nuget.org/packages?q=Mt.GraphQL). Zie voor de werking ook [deze Readme](https://www.nuget.org/packages/Mt.GraphQL.Api.Client#readme-body-tab). Ik hoop er, naast mezelf, ook andere mensen mee te kunnen helpen."
             ],
             "settings": {
                 "nextButtonText": "Ouder",
@@ -158,9 +164,52 @@
             }
         },
         {
+            "id": "uitbreiding-en-onderhoud-web-applicaties",
+            "title": "Uitbreiding en onderhoud web applicaties",
+            "tags": [
+                ".NET",
+                "EntityFramework",
+                "SQL Server",
+                "Azure",
+                "ARM templates",
+                "Angular",
+                "NGRX",
+                "SCSS",
+                "CI/CD",
+                "YAML pipelines"
+            ],
+            "content": [
+                "Juli 2020 tot heden - Het uitbreiden, aanpassen en onderhouden van web applicaties met een .NET backend en SQL Server databases.",
+                "--readmore--",
+                "Tags:<br/>",
+                ".NET - EntityFramework - SQL Server - Azure - ARM templates - CI/CD - YAML pipelines - Angular - NGRX - SCSS",
+                "## Situatie",
+                "Na mijn eerdere periode bij deze opdrachtgever zijn de meeste apps omgebouwd naar Angular en ook de backends zijn aangepakt om ze naar Azure te brengen. Ik vul een klein team aan dat bestaat uit aparte front- en backend ontwikkelaars. Er zijn integraties met het Sap ERP systeem en externe tools.",
+                "## Taken",
+                "Binnen enkele maanden nadat ik gestart ben verlaten de meeste teamleden de opdrachtgever en wordt er een nieuwe teamleider aangesteld. Ook komt er een extra .NET ontwikkelaar bij. Ik houd mij bezig met zowel front- als backend ontwikkeling, zowel uitbreiding/bugfixing op bestaande applicaties als het bouwen van nieuwe. Ook doen we DevOps op bestaande applicaties en ondersteunen gebruikers bij problemen. Ik voer regelmatig wijzigingen door in de CI/CD pipelines, zoals de ARM templates en we implementeren YAML pipelines. Als er een project wordt gestart voor een nieuw ERP landschap waarbij de doelstelling is om de meeste apps te vervangen, richt ik me op integraties die een geleidelijke overgang mogelijk maken.",
+                "## Aanpak",
+                "We organiseren ons werk middels Azure DevOps work items in sprints, maar van een echte scrum werkwijze is geen sprake. Binnen Azure maken we onder meer gebruik van Web en Function App Services, Application Insights, SQL Server, SignalR, ServiceBus en Key Vaults.",
+                "## Resultaat",
+                "We hebben een uitgebreid en krachtig applicatie landschap dat de processen bij de opdrachtgever optimaal ondersteunt."
+            ],
+            "settings": {
+                "nextButtonText": "Ouder",
+                "previousButtonText": "Nieuwer",
+                "categoryIndexes": {
+                    "experience": -11
+                }
+            }
+        },
+        {
             "id": "uitbreiding-van-data-uitwisseling-systeem",
             "title": "Uitbreiding van data uitwisseling systeem",
-            "tags": [".NET","SQL Server","MVC","EntityFrameworkCore","Scrum"],
+            "tags": [
+                ".NET",
+                "SQL Server",
+                "MVC",
+                "EntityFrameworkCore",
+                "Scrum"
+            ],
             "content": [
                 "December 2019 tot juni 2020 - Het uitbreiden van een data uitwisseling systeem en het bouwen van een adapter voor een specifieke externe API.",
                 "--readmore--",
@@ -172,7 +221,7 @@
                 "Het ontwerp en de bouw van de nieuwe adapter, waarbij de meeste tijd is besteed aan het bouwen van de communicatie. De API waarmee gecommuniceerd moet worden is oorspronkelijk gebouwd als backend voor een data invoer web applicatie waarin gezocht kan worden, een gevonden record kan worden bewerkt dat vervolgens kan worden opgeslagen of waarop de wijzigingen kunnen worden teruggedraaid. Ook invoer en verwijderen werken op soortgelijke wijze. Daarbij komt dat er met allerlei validaties rekening gehouden moet worden, en dat de volgorde van het aanbrengen van de wijzigingen zeer belangrijk is. Dit leidt tot een intensief communicatieproces dat bovendien zeer moeilijk te testen was. Naast deze communicatie moeten er tevens web portalen worden gebouwd voor gebruik door de support organisatie en door de gebruikers zelf, voor het instellen van rechten, en instellen van bepaalde mappings en het monitoren van de communicatie.",
                 "Tijdens dit project ben ik scrum-master geweest.",
                 "## Aanpak",
-                "We zijn begonnen met het implementeren van een client voor de API, waarbij een specifieke serialisatie methode is gebouwd. Daarna zijn entiteiten toegevoegd of uitgebreid in de database en de ex- en import. Tegelijk zijn generieke classes gebouwd om de communicatie uit te voeren in de correcte volgorde. Omdat de test mogelijkheden op de werkelijke API beperkt waren, is er ook veel tijd gestoken in integratietests waarin zo veel mogelijk scenarios getest werden. In deze tests werden alleen de EntityFramework context en de API communicatie gemocked. Zodoende kon niet alleen de logica worden getest, ook kon zodoende duidelijk worden gemaakt hoe e.e.a. behoort te werken. Ook zijn de benodigde portalen gebouwd.",
+                "We zijn begonnen met het implementeren van een client voor de API, waarbij een specifieke serialisatie methode is gebouwd. Daarna zijn entiteiten toegevoegd of uitgebreid in de database en de ex- en import. Tegelijk zijn generieke classes gebouwd om de communicatie uit te voeren in de correcte volgorde. Omdat de test mogelijkheden op de werkelijke API beperkt waren, is er ook veel tijd gestoken in integratietests waarin zo veel mogelijk scenarios getest werden. In deze tests werden alleen de EntityFramework context en de API communicatie gemocked. Zodoende kon niet alleen de logica worden getest, ook kon duidelijk worden gemaakt hoe e.e.a. behoort te werken. Ook zijn de benodigde portalen gebouwd.",
                 "## Resultaat",
                 "De werkzaamheden zijn met succes afgerond zodat de administraties in de backends synchroon gehouden kunnen worden met de administratie van de fok organisatie."
             ],
@@ -187,21 +236,33 @@
         {
             "id": "app-voor-varkenshouderij",
             "title": "App voor varkenshouderij",
-            "tags": [".NET","Xamarin","Android","iOS","MVC","Web API","RabbitMQ","TFS","CI/CD","Scrum"],
+            "tags": [
+                ".NET",
+                "Xamarin",
+                "Android",
+                "iOS",
+                "MVC",
+                "Web API",
+                "RabbitMQ",
+                "TFS",
+                "CI/CD",
+                "Scrum"
+            ],
             "content": [
                 "Januari 2019 tot november 2019 - Doorontwikkelen van een app en bijbehorende API.",
                 "--readmore--",
                 "Tags:<br/>",
                 ".NET - Xamarin - Android - iOS - MVC - Web API - RabbitMQ - TFS - CI/CD - Scrum",
                 "## Situatie",
-                "Wanneer ik aanschuif in dit project staat er al een basis voor de app en de API. De app moet worden uitgebreid zodat zo veel mogelijk van de handelingen, die varkenshouders in de stal moeten doen, via de app gedaan kunnen worden. De API communiceert via RabbitMQ met vier verschillende backend applicaties, waaronder ook instanties die bij klanten thuis geïnstalleerd zijn.",
+                "Wanneer ik aanschuif in dit project staat er al een basis voor de app en de API. De app moet worden uitgebreid zodat zo veel mogelijk van de handelingen, die varkenshouders in de stal moeten doen, via de app geadministreerd kunnen worden. De API communiceert via RabbitMQ met vier verschillende backend applicaties, waaronder ook instanties die bij klanten thuis geïnstalleerd zijn.",
                 "## Taken",
                 "De werkzaamheden omvatten het uitbreiden van de functionaliteiten van de app en de API, waaronder ook communicatie met externe RFID lezers. Ook hebben we grote stappen gemaakt in het verbeteren van de software kwaliteit en het verbeteren van het gebruik van RabbitMQ, omdat dit aanvankelijk verkeerd opgezet was. Hierdoor kon de doorstroom van het dataverkeer niet gedoseerd worden (throttling) wat regelmatig tot problemen leidde.",
                 "## Aanpak",
                 "Doorgaans werd het werk georganiseerd middels scrum in Microsoft TFS (Azure DevOps). Specifiek heb ik me bezig gehouden met een grote aanpassing in de manier waarop RabbitMQ werd gebruikt. Om de noodzaak van deze wijziging uit te leggen heb ik presentaties gehouden voor het team en de mensen die hierover moesten beslissen, en ik heb het uiteindelijk uitgevoerd.",
                 "De software voor de app werd herschreven in een generieke manier, om schermen en gedrag zo veel mogelijk te standaardiseren.",
                 "## Resultaat",
-                "De stabiliteit, kwaliteit en functionaliteit van de software zijn enorm toegenomen in de periode waarin we eraan gewerkt hebben. Na mijn bijdrage zijn teams opnieuw ingedeeld en ging een ander team hieraan verder werken."            ],
+                "De stabiliteit, kwaliteit en functionaliteit van de software zijn enorm toegenomen in de periode waarin we eraan gewerkt hebben. Na mijn bijdrage zijn teams opnieuw ingedeeld en ging een ander team hieraan verder werken."
+            ],
             "settings": {
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
@@ -213,7 +274,16 @@
         {
             "id": "software-voor-betaalterminals",
             "title": "Software voor betaalterminals",
-            "tags": ["C#.NET","Mono","Dependency Injection","Remoting","AngularJS","Web API","Test automation","Specflow"],
+            "tags": [
+                "C#.NET",
+                "Mono",
+                "Dependency Injection",
+                "Remoting",
+                "AngularJS",
+                "Web API",
+                "Test automation",
+                "Specflow"
+            ],
             "content": [
                 "Oktober 2017 tot januari 2019 - Doorontwikkelen van software voor betaalterminals. ",
                 "--readmore--",
@@ -226,7 +296,8 @@
                 "## Aanpak",
                 "Door de grote complexiteit van het systeem en de materie, en de veelheid aan benodigde kennis blijft het voor een nieuwe ontwikkelaar lang lastig om de weg in de code en de omgeving te vinden. Binnen het team werd dat goed opgelost door veel samen te werken. ",
                 "## Resultaat",
-                "Wanneer ik het project verlaat is de certificering succesvol afgerond en is er veel werk verzet op het gebied van functionele en technische correcties en toevoegingen."            ],
+                "Wanneer ik het project verlaat is de certificering succesvol afgerond en is er veel werk verzet op het gebied van functionele en technische correcties en toevoegingen."
+            ],
             "settings": {
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
@@ -238,7 +309,15 @@
         {
             "id": "dynamisch-data-integratie-platform",
             "title": "Dynamisch data integratie platform",
-            "tags": ["C#.NET","SQL Server","Code First EntityFramework","WCF","Dependency Injection","Expression trees","Service Oriented Architecture"],
+            "tags": [
+                "C#.NET",
+                "SQL Server",
+                "Code First EntityFramework",
+                "WCF",
+                "Dependency Injection",
+                "Expression trees",
+                "Service Oriented Architecture"
+            ],
             "content": [
                 "Februari 2017 tot september 2017 - Het vervangen van een statische data integratie applicatie door een platform waarin data integratie plaatsvindt deels op basis van overeenkomsten in veranderlijke datamodellen en deels op basis van configuratie.",
                 "--readmore--",
@@ -251,7 +330,8 @@
                 "## Aanpak",
                 "Voor elk van de functionele gebieden (selectie van aanbiedingen uit voorraad, verrijken met artikel informatie, lezen van externe informatie, berekenen van afgeleide informatie en validatie) heb ik WCF services ontwikkeld die zowel als service als direct benaderbaar zijn om onnodige serialisatie door WCF te voorkomen. Deze services bevatten veelal een initialisatie fase waarin de uit te voeren handelingen worden vastgesteld, voorbereid en geoptimaliseerd, zodat de bewerkingen in de uitvoerende fase zo snel mogelijk verlopen. Veel functionaliteit is gebaseerd op gestandaardiseerde kolomnamen. Een configuratie portal maakt het mogelijk om expliciete instellingen te doen.",
                 "## Resultaat",
-                "Bij het schrijven van deze tekst bevindt het systeem zich in de test fase. De resultaten zijn zeer veelbelovend. Het systeem wordt gebruikt als een set gereedschappen die naar behoefte worden ingezet. Wijzigingen in bestaande campagnes zijn eenvoudig door de gebruikers zelf te realiseren."            ],
+                "Bij het schrijven van deze tekst bevindt het systeem zich in de test fase. De resultaten zijn zeer veelbelovend. Het systeem wordt gebruikt als een set gereedschappen die naar behoefte worden ingezet. Wijzigingen in bestaande campagnes zijn eenvoudig door de gebruikers zelf te realiseren."
+            ],
             "settings": {
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
@@ -263,7 +343,15 @@
         {
             "id": "verwerkingssysteem-voor-datastromen",
             "title": "Verwerkingssysteem voor datastromen",
-            "tags": ["C#.NET","SQL Server","XML","Generic Classes","Dependency Injection","Automapper","Data optimaal programmeren"],
+            "tags": [
+                "C#.NET",
+                "SQL Server",
+                "XML",
+                "Generic Classes",
+                "Dependency Injection",
+                "Automapper",
+                "Data optimaal programmeren"
+            ],
             "content": [
                 "April 2016 tot januari 2017 - Het bouwen van een vervanging voor een bestaand dataverwerkingssysteem dat gebouwd was in Integration Services van Microsoft SQL Server. Het systeem moet grote hoeveelheden data kunnen verwerken van platte tabellen naar een stervormig datamodel ten behoeve van marketing en rapportage.",
                 "--readmore--",
@@ -276,7 +364,8 @@
                 "## Aanpak",
                 "Eerst heb ik een aantal componenten gebouwd die soortgelijke taken uitvoeren als de meest gangbare componenten in Integration Services, zoals data bronnen en bestemmingen, lookup, split en merge. Deze classes zijn allemaal generic zodat er altijd strong-typed gewerkt kan worden. Vervolgens heb ik een gelaagd systeem gebouwd waarbij de data wordt gemapt middels interfaces en Automapper. De database toegang wordt middels Dependency Injection gekoppeld zodat voor de tests niet altijd databases nodig zijn. Door middel van tests op de Automapper configuratie wordt gevalideerd of alle velden van bron en doel zijn opgenomen in het systeem.",
                 "## Resultaat",
-                "Het systeem dat nu draait werkt beter dan het oude omdat het in staat is met grotere hoeveelheden data te werken. De code is goed en volledig testbaar zonder het product eerst te hoeven installeren of afhankelijk te zijn van de inhoud van een database. Dit is een grote verbetering omdat de tests zo altijd dezelfde uitkomst hebben. Het aanbrengen van wijzigingen in het systeem gaat sneller en het resultaat is nu goed te valideren."            ],
+                "Het systeem dat nu draait werkt beter dan het oude omdat het in staat is met grotere hoeveelheden data te werken. De code is goed en volledig testbaar zonder het product eerst te hoeven installeren of afhankelijk te zijn van de inhoud van een database. Dit is een grote verbetering omdat de tests zo altijd dezelfde uitkomst hebben. Het aanbrengen van wijzigingen in het systeem gaat sneller en het resultaat is nu goed te valideren."
+            ],
             "settings": {
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
@@ -288,7 +377,14 @@
         {
             "id": "communicatiesysteem-veldapparatuur",
             "title": "Communicatiesysteem veldapparatuur",
-            "tags": ["C#.NET","Multithreading","Binaire communicatie","Dependency Injection","MQTT","IoT"],
+            "tags": [
+                "C#.NET",
+                "Multithreading",
+                "Binaire communicatie",
+                "Dependency Injection",
+                "MQTT",
+                "IoT"
+            ],
             "content": [
                 "December 2015 tot maart 2016 - Het bouwen van een server systeem voor het communiceren met eenvoudige apparatuur over GSM en GPRS verbindingen. Het systeem moet allerlei verbindingen en protocollen kunnen ontvangen en verwerken in een operationele database.",
                 "--readmore--",
@@ -301,7 +397,8 @@
                 "## Aanpak",
                 "Het doel was om een systeem op te zetten dat op basis van plugins uitbreidbaar zou zijn, waarbij de plugins geen kennis hebben van de database structuur of de werkwijze van het systeem. Daarom heb ik een bibliotheek ontwikkeld met base classes voor plugins voor het ontvangen en verwerken van communicatie sessies. Deze plugins bouwen tijdens een sessie data op waarvoor ik een model heb gemaakt. Door middel van unit-tests kunnen deze plugins worden getest en ontwikkeld, zonder kennis van het systeem of aanwezigheid van een database, eventueel door derden. De service zelf beheert de afhandeling van de plugins en de snelheid waarmee sessies worden verwerkt in de operationele database. Zodoende kan de belasting van de database gedoseerd worden.",
                 "## Resultaat",
-                "Op dit moment werkt de service met verschillende plugins voor verschillende leveranciers, die verschillende protocollen afhandelen - onder meer MQTT. Omdat de benodigde gegevens zijn klaargezet in een afzonderlijke database, en de sessies gedoseerd naar de operationele database worden verwerkt, is de belasting op de operationele database niet langer merkbaar."            ],
+                "Op dit moment werkt de service met verschillende plugins voor verschillende leveranciers, die verschillende protocollen afhandelen - onder meer MQTT. Omdat de benodigde gegevens zijn klaargezet in een afzonderlijke database, en de sessies gedoseerd naar de operationele database worden verwerkt, is de belasting op de operationele database niet langer merkbaar."
+            ],
             "settings": {
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
@@ -313,7 +410,15 @@
         {
             "id": "uitbreiding-registratie-systeem",
             "title": "Uitbreiding registratie systeem",
-            "tags": ["C#.NET","Ember","JavaScript","OpenStreetMaps","Leaflet","ServiceStack","SQL Server"],
+            "tags": [
+                "C#.NET",
+                "Ember",
+                "JavaScript",
+                "OpenStreetMaps",
+                "Leaflet",
+                "ServiceStack",
+                "SQL Server"
+            ],
             "content": [
                 "April 2015 tot november 2015 - Het uitbreiden van een online registratie systeem voor ondergrondse afvalcontainers en afvalpassen met een forecast module en rittenplanning voor de leging van de containers. Het portaal is gebouwd met het Ember JavaScript platform met en de server werkt met ServiceStack en SQL server.",
                 "--readmore--",
@@ -326,7 +431,8 @@
                 "## Aanpak",
                 "Omdat het portaal nog niet opgeleverd was ben ik begonnen met het analyseren van de gegevens in de database en het opbouwen van een business intelligence database en een ETL proces voor het berekenen van de voorspellingen. Na de oplevering van het portaal heb ik een dashboard ingebouwd voor het tonen van de voorspellingen in grafieken, naar aanleiding waarvan routes aangemaakt konden worden. Door middel van een maatwerk route optimalisatie systeem met OpenStreetMaps werden routes bepaald die in het portaal getoond werden in een Leaflet plugin. Deze routes konden worden geëxporteerd voor gebruik in andere systemen.",
                 "## Resultaat",
-                "Met name het dashboard met de voorspellingen en het automatisch selecteren van containers voor leging was een functie die veel enthousiasme opriep bij opdrachtgever en klanten. Een toekomstig project zal de geplande routes integreren in de navigatiesystemen van de vrachtwagens."            ],
+                "Met name het dashboard met de voorspellingen en het automatisch selecteren van containers voor leging was een functie die veel enthousiasme opriep bij opdrachtgever en klanten. Een toekomstig project zal de geplande routes integreren in de navigatiesystemen van de vrachtwagens."
+            ],
             "settings": {
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
@@ -338,7 +444,21 @@
         {
             "id": "teambuilding-app",
             "title": "Teambuilding app",
-            "tags": ["C#.NET","ASP.NET","SQL Server","ModelFirst EntityFramework","MVC","Sencha Touch","JavaScript","FabricJs","PhoneGap","CSS","SASS","HTML5","Windows Azure"],
+            "tags": [
+                "C#.NET",
+                "ASP.NET",
+                "SQL Server",
+                "ModelFirst EntityFramework",
+                "MVC",
+                "Sencha Touch",
+                "JavaScript",
+                "FabricJs",
+                "PhoneGap",
+                "CSS",
+                "SASS",
+                "HTML5",
+                "Windows Azure"
+            ],
             "content": [
                 "Oktober 2014 tot december 2018 - Een app voor de Apple en Android tablets en desktop browsers voor het verbeteren van samenwerking binnen teams. De basis voor de app is Sencha Touch in combinatie met PhoneGap Build en grafische rendering op een HTML5 canvas. Voor de backend wordt in .NET een web role gemaakt met MVC4 die draait onder Windows Azure.",
                 "--readmore--",
@@ -351,7 +471,8 @@
                 "## Aanpak",
                 "Omdat de opdrachtgever al meerdere slechte ervaringen had met aannemers die met dit project waren gestart, was het belangrijk zo transparant mogelijk te zijn in planning en uitvoering, en de opdrachtgever zo goed mogelijk op de hoogte te houden van de voortgang. Hiervoor heb ik met verschillende hulpmiddelen gezorgd. Specifiek voor de rapportage heb ik een concept uitgewerkt op basis van MigraDocs omdat de ondersteuning van Microsoft Reporting Services binnen Azure is stopgezet.",
                 "## Resultaat",
-                "Op het moment van schrijven is de app in gebruik voor verschillende grote organisaties. Met een enkele code base wordt zowel een web versie als een PhoneGap versie ondersteund welke zijn te downloaden uit Google Play en de Apple AppStore. Mede door de nauwe interactie met de opdrachtgever is in korte tijd enorm veel gerealiseerd."            ],
+                "Op het moment van schrijven is de app in gebruik voor verschillende grote organisaties. Met een enkele code base wordt zowel een web versie als een PhoneGap versie ondersteund welke zijn te downloaden uit Google Play en de Apple AppStore. Mede door de nauwe interactie met de opdrachtgever is in korte tijd enorm veel gerealiseerd."
+            ],
             "settings": {
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
@@ -363,7 +484,21 @@
         {
             "id": "diverse-apps",
             "title": "Diverse Apps",
-            "tags": ["C#.NET","ASP.NET","SQL Server","CodeFirst EntityFramework","MVC","ServiceBus","Sencha Touch","Sencha ExtJS","JavaScript","CSS","Single Page Application","JsDuck","TFS"],
+            "tags": [
+                "C#.NET",
+                "ASP.NET",
+                "SQL Server",
+                "CodeFirst EntityFramework",
+                "MVC",
+                "ServiceBus",
+                "Sencha Touch",
+                "Sencha ExtJS",
+                "JavaScript",
+                "CSS",
+                "Single Page Application",
+                "JsDuck",
+                "TFS"
+            ],
             "content": [
                 "Maart 2013 tot maart 2015 - Diverse apps voor iPhone, iPad en desktop browsers voor het optimaliseren van diverse processen. Ontwikkeld in Sencha Touch voor de iPhone en iPad en in Sencha ExtJS voor desktop browsers, met een .NET MVC server kant.",
                 "--readmore--",
@@ -377,7 +512,7 @@
                 "De apps worden gebouwd met een Sencha voorkant, waarbij in de browser, in JavaScript, een complete MVC architectuur wordt gebouwd in een Single Page Application. De data wordt uitgewisseld met de server middels ASP.NET MVC controllers, waarbij dus enkel Views en Controllers worden gebruikt. De standaard lagen architectuur wordt uitgebreid met een ServiceBus die de communicatie met andere applicaties faciliteert.",
                 "Een rol die ik specifiek heb ingevuld in het team is die van Sencha deskundige; ik schreef code voor het oplossen van bugs in de Sencha code (overrides) en hielp problemen, die samenhingen met de specifieke toepassing van de platforms, op te lossen door te debuggen in de Sencha code zelf. Verder heb ik een framework gebouwd voor het normaliseren van over de apps gedeelde logica.",
                 "## Resultaat",
-                "Ten tijde van het schrijven van dit verslag zijn er al enige apps ontwikkeld die met toenemende kwaliteit worden gerealiseerd doordat ontwikkelaars sterk afhankelijk zijn van de opgedane ervaring met de Sencha platforms. Door het toenemende inzicht zijn de ontwikkelingen tevens steeds beter te plannen. Ook de werking en architectuur van de 'achterkant' is goed en leent zich goed voor analyse. De geleverde kwaliteit is goed."                
+                "Ten tijde van het schrijven van dit verslag zijn er al enige apps ontwikkeld die met toenemende kwaliteit worden gerealiseerd doordat ontwikkelaars sterk afhankelijk zijn van de opgedane ervaring met de Sencha platforms. Door het toenemende inzicht zijn de ontwikkelingen tevens steeds beter te plannen. Ook de werking en architectuur van de 'achterkant' is goed en leent zich goed voor analyse. De geleverde kwaliteit is goed."
             ],
             "settings": {
                 "nextButtonText": "Ouder",
