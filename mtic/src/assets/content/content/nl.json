@@ -142,7 +142,7 @@
                 "Web API"
             ],
             "content": [
-                "Mei 2023 tot januari 2024 - Het ontwerpen, bouwen en testen van een [server](https://www.nuget.org/packages/Mt.GraphQL.Api.Server) en een [client](https://www.nuget.org/packages/Mt.GraphQL.Api.Client) bibliotheek voor het gebruik van [GraphUI](https://learn.microsoft.com/en-us/graph/query-parameters) in een API. ",
+                "Mei 2023 tot januari 2024 - Het ontwerpen, bouwen en testen van een [server](https://www.nuget.org/packages/Mt.GraphQL.Api.Server) en een [client](https://www.nuget.org/packages/Mt.GraphQL.Api.Client) bibliotheek voor het gebruik van [GraphQL](https://learn.microsoft.com/en-us/graph/query-parameters) in een API. ",
                 "--readmore--",
                 "Tags:<br/>",
                 ".NET - .NetStandard - Web API - NuGet - Expressions - Expression trees",
