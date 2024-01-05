@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { Article } from 'src/app/store/models/article.model';
+import { Article } from '@app/store/models/article.model';
 
 @Component({
   selector: 'app-article-component',

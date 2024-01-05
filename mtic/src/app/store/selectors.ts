@@ -21,11 +21,11 @@ export const getCategoryArticles = createSelector(
     getArticles,
     selectRouteData,
     (articles, data) =>
-    getArticlesByCategory(articles, data?.category));
+    getArticlesByCategory(articles, data?.['category']));
 
 export const getCodeUrl = createSelector(
     selectRouteData,
-    (data) => data?.codeUrl);
+    (data) => data?.['codeUrl']);
 
 export const getRouterArticleId = createSelector(selectRouteParam('articleId'), (articleId) =>
     typeof articleId === 'string' ? articleId : null);

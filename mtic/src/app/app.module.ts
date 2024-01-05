@@ -19,7 +19,7 @@ import { ArticleComponent } from './article/article.component';
 import { ArticleComponentComponent } from './_partials/article-component/article-component.component';
 import { FEATURE } from './store/selectors';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { environment } from 'src/environments/environment';
+import { environment } from '@src/environments/environment';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import * as fromRouter from './store/route';
 import { SearchComponent } from './search/search.component';

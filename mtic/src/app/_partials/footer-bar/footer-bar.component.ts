@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { getCodeUrl } from 'src/app/store/selectors';
-import { BaseComponent } from 'src/app/_base/component.base';
+import { getCodeUrl } from '@app/store/selectors';
+import { BaseComponent } from '@app/_base/component.base';
 
 @Component({
   selector: 'app-footer-bar',
@@ -19,9 +19,6 @@ export class FooterBarComponent extends BaseComponent implements OnInit {
   ngOnInit(): void {
     this.subscribe(
       this.store.select(getCodeUrl),
-      (codeUrl) => {
-        this.codeUrl = codeUrl;
-      }
-    );
+      (codeUrl) => this.codeUrl = codeUrl);
   }
 }

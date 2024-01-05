@@ -61,15 +61,15 @@ export class SearchComponent extends BaseComponent implements OnInit {
 
     this.subscribe(
       this.activatedRoute.queryParams.pipe(
-        filter((params: Params) => params && params.q),
+        filter((params: Params) => params && params['q']),
         tap((params: Params) => {
           this.articles = [];
-          this.searchControl.setValue(params.q);
+          this.searchControl.setValue(params['q']);
         }),
-        filter((params: Params) => params.q.length >= 3)
+        filter((params: Params) => params['q'].length >= 3)
       ),
       (params) => {
-        this.store.dispatch(search({ search: params.q }));
+        this.store.dispatch(search({ search: params['q'] }));
       }
     );
   }

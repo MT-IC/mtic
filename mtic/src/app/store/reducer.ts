@@ -52,7 +52,7 @@ const stateReducer = createReducer<State, Action>(
         (state, action) => {
             return {
                 ...state,
-                activeHeaderButton: action.payload.routerState.root?.firstChild?.data?.activeHeaderButton || state.activeHeaderButton
+                activeHeaderButton: action.payload.routerState.root?.firstChild?.data?.['activeHeaderButton'] || state.activeHeaderButton
             };
         }
     )

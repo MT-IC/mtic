@@ -19,7 +19,7 @@ export class ArticlesComponent extends BaseComponent implements OnInit {
   }
 
   getClass(): string {
-    return `articles ${this.route.snapshot.data.category}`.trim();
+    return `articles ${this.route.snapshot.data['category']}`.trim();
   }
 
   ngOnInit(): void {

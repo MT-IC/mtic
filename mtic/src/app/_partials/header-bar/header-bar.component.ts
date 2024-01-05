@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { filter, take, tap } from 'rxjs/operators';
-import { BaseComponent } from 'src/app/_base/component.base';
-import { Navigation } from 'src/app/_models/navigation.interface';
-import * as selectors from '../../store/selectors';
-import * as actions from '../../store/actions';
+import { BaseComponent } from '@app/_base/component.base';
+import { Navigation } from '@app/_models/navigation.interface';
+import * as selectors from '@app/store/selectors';
+import * as actions from '@app/store/actions';
 
 @Component({
   selector: 'app-header-bar',

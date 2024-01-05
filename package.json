@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@ngrx/schematics": "^17.0.1"
+  }
+}

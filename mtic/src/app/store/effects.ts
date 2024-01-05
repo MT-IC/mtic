@@ -39,7 +39,7 @@ export class Effects {
                 this.activatedRoute.queryParams),
             filter(([_, articles]) => !!articles),
             exhaustMap(([_, articles, params]) => {
-                const search: string = params.q || '';
+                const search: string = params['q'] || '';
                 const terms = search.toLowerCase().split(' ').filter(t => t.length);
                 if (terms.length === 0) {
                     return [];
