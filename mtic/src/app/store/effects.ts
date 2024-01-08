@@ -16,12 +16,15 @@ export class Effects {
     loadContent$ = createEffect(() =>
         this.actions$.pipe(
             ofType(actions.loadContent),
-            withLatestFrom(this.store.select(selectors.getContent)),
-            exhaustMap(([_, existingContent]) => {
-                const loadingNecessary = !existingContent?.articles?.length;
+            withLatestFrom(
+                this.store.select(selectors.getContentLoaded),
+                this.store.select(selectors.getContent)),
+            exhaustMap(([_, contentLoaded, currentContent]) => {
+                const time30minutes = 30 * 60 * 1000;
+                const loadingNecessary = !contentLoaded || (new Date()).valueOf() - contentLoaded.valueOf() > time30minutes;
                 const content: Observable<Content> = loadingNecessary
                     ? this.service.loadContent()
-                    : of(existingContent || new Content());
+                    : of(currentContent || new Content());
 
                 return content.pipe(
                     map(c => loadingNecessary ? actions.loadContentSuccess({ content: c }) : actions.loadContentNotNecessary()),
@@ -62,7 +65,9 @@ export class Effects {
             withLatestFrom(this.store.select(selectors.getCaptions)),
             filter(([{ name }] ) => name === 'download-cv'),
             exhaustMap(([_, captions]) => {
-                window.open(captions['download-cv-url']);
+                if (captions) {
+                    window.open(captions['download-cv-url']);
+                }
                 return of(actions.menuItemSelectionDone());
             })
         )

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -23,6 +23,8 @@ import { environment } from '@src/environments/environment';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import * as fromRouter from './store/route';
 import { SearchComponent } from './search/search.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { InterceptRouterlinkDirective } from './_directives/interceptRouterLink.directive';
 
 interface ReducerState {
   router: fromRouter.routerReducerState;
@@ -41,6 +43,7 @@ export const reducers: ActionReducerMap<ReducerState> = {
     ArticleComponentComponent,
     ArticleComponent,
     ArticlesComponent,
+    InterceptRouterlinkDirective,
     SearchComponent
   ],
   imports: [
@@ -60,6 +63,12 @@ export const reducers: ActionReducerMap<ReducerState> = {
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
     })
   ],
   providers: [],

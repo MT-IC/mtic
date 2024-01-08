@@ -13,6 +13,8 @@ export const getActiveHeaderButton = createSelector(getState, (state) => state?.
 
 export const getContent = createSelector(getState, (state) => state?.content);
 
+export const getContentLoaded = createSelector(getState, (state) => state?.loaded);
+
 export const getCaptions = createSelector(getContent, (content) => content?.captions);
 
 export const getArticles = createSelector(getContent, (content) => content?.articles);

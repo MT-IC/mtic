@@ -35,6 +35,7 @@ const stateReducer = createReducer<State, Action>(
             return {
                 ...state,
                 loading: false,
+                loaded: new Date(),
                 content: newContent
             };
         }),
@@ -43,8 +44,7 @@ const stateReducer = createReducer<State, Action>(
         (state) => {
             return {
                 ...state,
-                loading: false,
-                loaded: true
+                loading: false
             };
         }),
     on(

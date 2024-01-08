@@ -3,6 +3,8 @@ import { NavigationEnd, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { BaseComponent } from './_base/component.base';
 import * as actions from './store/actions';
+import { SwUpdate } from '@angular/service-worker';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +14,7 @@ import * as actions from './store/actions';
 export class AppComponent extends BaseComponent implements OnInit {
   @ViewChild('content') content: any;
 
-  constructor(private router: Router, private store: Store) {
+  constructor(private router: Router, private store: Store, private update: SwUpdate) {
     super();
   }
 
@@ -27,6 +29,13 @@ export class AppComponent extends BaseComponent implements OnInit {
         }
       }
     );
+    this.subscribe(
+      this.update.versionUpdates.pipe(filter(e => e.type == 'VERSION_DETECTED')),
+      event => {
+        console.log("Update", event);
+        this.update.activateUpdate().then(() => document.location.reload());
+      }
+    )
     this.store.dispatch(actions.loadContent());
   }
 }

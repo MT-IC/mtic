@@ -151,7 +151,7 @@
                 "## Taken",
                 "Het ontwerpen, implementeren en testen van de bibliotheken.",
                 "## Aanpak",
-                "Door te baseren op .NetStandard zijn de bibliotheken toepasbaar voor alle .NET versies. Ik heb een aantal taken aangemaakt en die ben ik stuk voor stuk gaan ontwikkelen, waarbij ik ook tests heb gebouwd ter ondersteuning van de bouw en om de correcte werking te bewaken. Met name het bouwen van runtime classes voor de in het request gevraagde datatype, en het bouwen van Linq expressies daarop, bleek uitdagend.",
+                "Door te baseren op .NetStandard zijn de bibliotheken toepasbaar voor alle .NET versies. Ik heb een aantal taken aangemaakt en die ben ik stuk voor stuk gaan ontwikkelen, waarbij ik ook tests heb gebouwd ter ondersteuning van de bouw en om de correcte werking te bewaken. Met name het runtime bouwen van classes voor de in het request gevraagde datatype, en het bouwen van Linq expressies daarop, bleek uitdagend.",
                 "## Resultaat",
                 "Momenteel staan de bibliotheken als packages [in de NuGet repository](https://www.nuget.org/packages?q=Mt.GraphQL). Zie voor de werking ook [deze Readme](https://www.nuget.org/packages/Mt.GraphQL.Api.Client#readme-body-tab). Ik hoop er, naast mezelf, ook andere mensen mee te kunnen helpen."
             ],
@@ -159,7 +159,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "experience": -10
+                    "experience": -11
                 }
             }
         },
@@ -184,7 +184,7 @@
                 "Tags:<br/>",
                 ".NET - EntityFramework - SQL Server - Azure - ARM templates - CI/CD - YAML pipelines - Angular - NGRX - SCSS",
                 "## Situatie",
-                "Na mijn eerdere periode bij deze opdrachtgever zijn de meeste apps omgebouwd naar Angular en ook de backends zijn aangepakt om ze naar Azure te brengen. Ik vul een klein team aan dat bestaat uit aparte front- en backend ontwikkelaars. Er zijn integraties met het Sap ERP systeem en externe tools.",
+                "Na <a href=\"/article/diverse-apps\">mijn eerdere periode</a> bij deze opdrachtgever zijn de meeste apps omgebouwd naar Angular en ook de backends zijn aangepakt om ze naar Azure te brengen. Ik vul een klein team aan dat bestaat uit aparte front- en backend ontwikkelaars. Er zijn integraties met het Sap ERP systeem en externe tools.",
                 "## Taken",
                 "Binnen enkele maanden nadat ik gestart ben verlaten de meeste teamleden de opdrachtgever en wordt er een nieuwe teamleider aangesteld. Ook komt er een extra .NET ontwikkelaar bij. Ik houd mij bezig met zowel front- als backend ontwikkeling, zowel uitbreiding/bugfixing op bestaande applicaties als het bouwen van nieuwe. Ook doen we DevOps op bestaande applicaties en ondersteunen gebruikers bij problemen. Ik voer regelmatig wijzigingen door in de CI/CD pipelines, zoals de ARM templates en we implementeren YAML pipelines. Als er een project wordt gestart voor een nieuw ERP landschap waarbij de doelstelling is om de meeste apps te vervangen, richt ik me op integraties die een geleidelijke overgang mogelijk maken.",
                 "## Aanpak",
@@ -196,7 +196,7 @@
                 "nextButtonText": "Ouder",
                 "previousButtonText": "Nieuwer",
                 "categoryIndexes": {
-                    "experience": -11
+                    "experience": -10
                 }
             }
         },

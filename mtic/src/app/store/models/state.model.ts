@@ -4,6 +4,6 @@ export class State {
     language = 'nl';
     activeHeaderButton: string | null = null;
     loading = false;
-    loaded = false;
+    loaded: Date | undefined = undefined;
     content: SiteContent | null = null;
 }

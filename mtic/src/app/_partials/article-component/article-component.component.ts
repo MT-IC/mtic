@@ -1,19 +1,25 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Article } from '@app/store/models/article.model';
+import { Store } from '@ngrx/store';
+import * as actions from '../../store/actions';
 
 @Component({
   selector: 'app-article-component',
   templateUrl: './article-component.component.html',
   styleUrls: ['./article-component.component.scss']
 })
-export class ArticleComponentComponent {
+export class ArticleComponentComponent implements OnInit {
   @Input() article: Article | null = null;
   @Input() full = false;
 
   private readmore = '--readmore--';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private store: Store) { }
+
+  ngOnInit(): void {
+    this.store.dispatch(actions.loadContent());
+  }
 
   getArticleClass(): string {
     return `${this.article?.class} ${this.full ? 'full' : ''}`.trim();
