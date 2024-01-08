@@ -22,6 +22,8 @@ export class AppComponent extends BaseComponent implements OnInit {
       (e) => {
         if (e instanceof NavigationEnd) {
           this.content?.nativeElement?.scrollTo(0, 0);
+          const w: any = window;
+          w.gtag(e.type, e.urlAfterRedirects);
         }
       }
     );
