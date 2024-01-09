@@ -44,6 +44,18 @@
             }
         },
         {
+            "id": "graphql-bibliotheken-gepubliceerd",
+            "title": "GraphQL bibliotheken gepubliceerd",
+            "content": [
+                "Ik heb NuGet packages gepubliceerd waarmee je eenvoudig GraphQL kunt ondersteunen op je web API en eventueel in je client applicatie. In je client applicatie kun je eenvoudig met Linq-achtige code een request opbouwen, die aan de server kant eenvoudig toegepast kan worden op een IQueryable zoals een EntityFramework query. Zie ook de readme [in de NuGet repository](https://www.nuget.org/packages?q=Mt.GraphQL)."
+            ],
+            "settings": {
+                "categoryIndexes": {
+                    "home": 2
+                }
+            }
+        },
+        {
             "id": "curriculum-vitae",
             "title": "Curriculum Vitae",
             "class": "tables-without-headers",

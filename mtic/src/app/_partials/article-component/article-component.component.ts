@@ -1,21 +1,50 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { AfterContentChecked, Component, Input, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Article } from '@app/store/models/article.model';
 import { Store } from '@ngrx/store';
 import * as actions from '../../store/actions';
+import { MarkdownComponent } from 'ngx-markdown';
 
 @Component({
   selector: 'app-article-component',
   templateUrl: './article-component.component.html',
   styleUrls: ['./article-component.component.scss']
 })
-export class ArticleComponentComponent implements OnInit {
+export class ArticleComponentComponent implements OnInit, AfterContentChecked {
+  @ViewChild('content') content: MarkdownComponent | null = null;
   @Input() article: Article | null = null;
   @Input() full = false;
 
   private readmore = '--readmore--';
+  private modifyingContent = false;
 
   constructor(private router: Router, private store: Store) { }
+
+  ngAfterContentChecked(): void {
+    if (this.modifyingContent) {
+      return;
+    }
+
+    try
+    {
+      const nativeElement = this.content?.element?.nativeElement;
+      if (nativeElement) {
+        this.modifyingContent = true;
+        const links = nativeElement.getElementsByTagName('a');
+        Array.prototype.forEach.apply(links, [function(link: HTMLAnchorElement) {
+          if (link.hostname != window.location.hostname && 
+            ['http:', 'https:'].includes(link.protocol) &&
+            !link.target) {
+            link.setAttribute('target', '_blank');
+          }
+        }]);
+      }
+    }
+    finally
+    {
+      this.modifyingContent = false;
+    }
+  }
 
   ngOnInit(): void {
     this.store.dispatch(actions.loadContent());
