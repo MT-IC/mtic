@@ -29,7 +29,8 @@
               "src/favicon.ico",
               "src/assets",
               "src/.htaccess",
-              "src/manifest.webmanifest"
+              "src/manifest.webmanifest",
+              "src/google937f8a459eff3b5b.html"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
