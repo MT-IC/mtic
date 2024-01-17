@@ -32,12 +32,12 @@
         },
         {
             "id": "beschikbaar",
-            "title": "Beschikbaar per 1 maart 2023",
+            "title": "Geïnteresseerd in een nieuwe opdracht",
             "content": [
-                "Ik ben op zoek naar een nieuw full-time project, een paar dagen per week op kantoor binnen een uur rijden vanaf Apeldoorn. Ik werk graag met Scrum, Azure en Angular, maar dat is geen vereiste. Mocht u iemand zoeken, neem dan contact met me op."
+                "Hoewel ik momenteel op een opdracht zonder einddatum zit, ben ik mogelijk geïnteresseerd in een nieuw full-time project, een paar dagen per week op kantoor binnen een uur rijden vanaf Apeldoorn. Naast C# werk ik graag met Scrum, Azure en Angular, maar dat is geen vereiste. Mocht u iemand zoeken, neem dan contact met me op."
             ],
             "settings": {
-                "hidden": true,
+                "hidden": false,
                 "categoryIndexes": {
                     "home": 1
                 }
