@@ -1,9 +1,10 @@
-import { AfterContentChecked, Component, Input, OnInit, ViewChild } from '@angular/core';
+import { AfterContentChecked, Component, Inject, Input, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Article } from '@app/store/models/article.model';
 import { Store } from '@ngrx/store';
 import * as actions from '../../store/actions';
 import { MarkdownComponent } from 'ngx-markdown';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-article-component',
@@ -18,7 +19,7 @@ export class ArticleComponentComponent implements OnInit, AfterContentChecked {
   private readmore = '--readmore--';
   private modifyingContent = false;
 
-  constructor(private router: Router, private store: Store) { }
+  constructor(private router: Router, private store: Store, @Inject(DOCUMENT) private document: any) { }
 
   ngAfterContentChecked(): void {
     if (this.modifyingContent) {
@@ -31,8 +32,9 @@ export class ArticleComponentComponent implements OnInit, AfterContentChecked {
       if (nativeElement) {
         this.modifyingContent = true;
         const links = nativeElement.getElementsByTagName('a');
+        const hostname = this.document?.location?.hostname;
         Array.prototype.forEach.apply(links, [function(link: HTMLAnchorElement) {
-          if (link.hostname != window.location.hostname && 
+          if (link.hostname != hostname && 
             ['http:', 'https:'].includes(link.protocol) &&
             !link.target) {
             link.setAttribute('target', '_blank');

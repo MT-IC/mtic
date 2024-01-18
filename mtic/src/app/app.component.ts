@@ -1,10 +1,11 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { BaseComponent } from './_base/component.base';
 import * as actions from './store/actions';
 import { SwUpdate } from '@angular/service-worker';
 import { filter } from 'rxjs';
+import { WINDOW } from './_helpers/window';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ import { filter } from 'rxjs';
 export class AppComponent extends BaseComponent implements OnInit {
   @ViewChild('content') content: any;
 
-  constructor(private router: Router, private store: Store, private update: SwUpdate) {
+  constructor(private router: Router, private store: Store, private update: SwUpdate, @Inject(WINDOW) private window: Window) {
     super();
   }
 
@@ -23,9 +24,13 @@ export class AppComponent extends BaseComponent implements OnInit {
       this.router.events,
       (e) => {
         if (e instanceof NavigationEnd) {
-          this.content?.nativeElement?.scrollTo(0, 0);
-          const w: any = window;
-          w.gtag(e.type, e.urlAfterRedirects);
+          if (this.content?.nativeElement?.scrollTo) {
+            this.content?.nativeElement?.scrollTo(0, 0);
+          }
+          const w: any = this.window;
+          if (w) {
+            w.gtag(e.type, e.urlAfterRedirects);
+          }
         }
       }
     );
