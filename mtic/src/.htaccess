@@ -2,7 +2,9 @@
 # with a AllowOverride All
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteCond %{http_host} ^plazamila.nl
+  RewriteCond %{http_host} ^(www\.)?plazamila.nl
+  RewriteRule ^(.*) https://www.marceltimmerman.nl/$1 [R=301,L]
+  RewriteCond %{http_host} ^(www\.)?marceltimmerman.com
   RewriteRule ^(.*) https://www.marceltimmerman.nl/$1 [R=301,L]
 
   RewriteCond %{REQUEST_FILENAME} -s [OR]
