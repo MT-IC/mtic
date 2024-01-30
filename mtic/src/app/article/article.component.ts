@@ -61,8 +61,4 @@ export class ArticleComponent extends BaseComponent implements OnInit {
       this.meta.updateTag({name: 'keywords', content: this.originalKeywords }, 'name="keywords"');
     }
   }
-
-  to(article: Article): void {
-    this.router.navigate(['article', article.id]);
-  }
 }

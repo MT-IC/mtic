@@ -2,18 +2,18 @@
   <app-article-component [article]="article" [full]="true"></app-article-component>
   <div class="navigation">
     <div class="previous-article" *ngIf="previousArticle$ | async as previousArticle">
-      <button
+      <a
         class="nav-btn"
         *ngIf="previousArticle"
         [title]="previousArticle?.title"
-        (click)="to(previousArticle)">{{ previousArticleButtonText }}</button>
+        routerLink="/article/{{ previousArticle.id }}">{{ previousArticleButtonText }}</a>
     </div>
     <div class="next-article" *ngIf="nextArticle$ | async as nextArticle">
-      <button 
+      <a 
         class="nav-btn"
         *ngIf="nextArticle"
         [title]="nextArticle?.title"
-        (click)="to(nextArticle)">{{ nextArticleButtonText }}</button>
+        routerLink="/article/{{ nextArticle.id }}">{{ nextArticleButtonText }}</a>
     </div>
   </div>
 </div>

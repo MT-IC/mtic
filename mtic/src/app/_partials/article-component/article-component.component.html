@@ -1,7 +1,7 @@
 <div class="article-component" *ngIf="article">
   <div [class]="getArticleClass()">
-    <h1 *ngIf="showTitle()">{{ article.title }}</h1>
+    <h1 *ngIf="showTitle">{{ article.title }}</h1>
     <markdown #content [data]="getContent()" appInterceptRouterlink></markdown>
-    <button class="nav-btn btn-readmore" *ngIf="!full && hasReadMore()" (click)="readMore()">Lees meer...</button>
+    <a class="nav-btn btn-readmore" *ngIf="!full && hasReadMore" routerLink="/article/{{ article.id }}">Lees meer...</a>
   </div>
 </div>

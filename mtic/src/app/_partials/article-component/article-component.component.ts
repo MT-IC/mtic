@@ -70,7 +70,7 @@ export class ArticleComponentComponent implements OnInit, AfterContentChecked {
     return this.full ? content.replace(this.readmore, '') : content.substring(0, readmorePos);
   }
 
-  hasReadMore(): boolean {
+  get hasReadMore(): boolean {
     const content = this.article?.content;
     if (!content) {
       return false;
@@ -78,12 +78,8 @@ export class ArticleComponentComponent implements OnInit, AfterContentChecked {
     return content.indexOf(this.readmore) >= 0;
   }
 
-  showTitle(): boolean {
+  get showTitle(): boolean {
     const setting = this.article?.settings?.showTitle;
     return setting === undefined ? true : setting;
-  }
-
-  readMore(): void {
-    this.router.navigate(['article', this.article?.id]);
   }
 }
