@@ -1,16 +1,8 @@
 # be sure to have a <Directory /var/www/html/...> in your apache config
 # with a AllowOverride All
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{http_host} ^(www\.)?plazamila.nl
-  RewriteRule ^(.*) https://www.marceltimmerman.nl/$1 [R=301,L]
-  RewriteCond %{http_host} ^(www\.)?marceltimmerman.com
-  RewriteRule ^(.*) https://www.marceltimmerman.nl/$1 [R=301,L]
-
-  RewriteCond %{REQUEST_FILENAME} -s [OR]
-  RewriteCond %{REQUEST_FILENAME} -l [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
-  RewriteRule ^.*$ - [NC,L]
-
-  RewriteRule ^(.*) /index.html [NC,L]
+RewriteEngine On
+RewriteCond %{http_host} ^(www\.)?(plazamila.nl|marceltimmerman.com)
+RewriteRule ^(.*) https://www.marceltimmerman.nl/$1 [R=301,L]
+RewriteEngine Off
 </IfModule>

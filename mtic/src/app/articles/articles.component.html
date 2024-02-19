@@ -1,10 +1,10 @@
 <div [class]="getClass()">
-  <div *ngIf="articles$ | async as articles">
+  <article *ngIf="articles$ | async as articles">
     <div *ngFor="let article of articles">
       <app-article-component
         [article]="article"
       ></app-article-component>
       <hr *ngIf="article !== articles[articles.length - 1]">
     </div>
-  </div>
+  </article>
 </div>

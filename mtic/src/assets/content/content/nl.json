@@ -47,7 +47,7 @@
             "id": "graphql-bibliotheken-gepubliceerd",
             "title": "GraphQL bibliotheken gepubliceerd",
             "content": [
-                "Ik heb NuGet packages gepubliceerd waarmee je eenvoudig GraphQL kunt ondersteunen op je web API en eventueel in je client applicatie. In je client applicatie kun je eenvoudig met Linq-achtige code een request opbouwen, die aan de server kant eenvoudig toegepast kan worden op een IQueryable zoals een EntityFramework query. Zie ook de readme [in de NuGet repository](https://www.nuget.org/packages?q=Mt.GraphQL)."
+                "Ik heb NuGet packages gepubliceerd waarmee je eenvoudig GraphQL kunt ondersteunen op je web API en eventueel in je client applicatie. In je client applicatie kun je eenvoudig met Linq-achtige code een request opbouwen, die aan de server kant eenvoudig toegepast kan worden op een IQueryable zoals een EntityFramework query. Zie ook de readme [in de NuGet repository](https://www.nuget.org/packages?q=Mt.GraphQL) en [dit artikel](/article/graphql-bibliotheek/)."
             ],
             "settings": {
                 "categoryIndexes": {
@@ -165,7 +165,7 @@
                 "## Aanpak",
                 "Door te baseren op .NetStandard zijn de bibliotheken toepasbaar voor alle .NET versies. Ik heb een aantal taken aangemaakt en die ben ik stuk voor stuk gaan ontwikkelen, waarbij ik ook tests heb gebouwd ter ondersteuning van de bouw en om de correcte werking te bewaken. Met name het runtime bouwen van classes voor de in het request gevraagde datatype, en het bouwen van Linq expressies daarop, bleek uitdagend.",
                 "## Resultaat",
-                "Momenteel staan de bibliotheken als packages [in de NuGet repository](https://www.nuget.org/packages?q=Mt.GraphQL). Zie voor de werking ook [deze Readme](https://www.nuget.org/packages/Mt.GraphQL.Api.Client#readme-body-tab). Ik hoop er, naast mezelf, ook andere mensen mee te kunnen helpen."
+                "Momenteel staan de bibliotheken als packages [in de NuGet repository](https://www.nuget.org/packages?q=Mt.GraphQL). Zie voor de werking ook [deze Readme](https://www.nuget.org/packages/Mt.GraphQL.Api.Client#readme-body-tab). De source code is te vinden op [Github](https://github.com/codingmt/Mt.GraphQL). Ik hoop er, naast mezelf, ook andere mensen mee te kunnen helpen."
             ],
             "settings": {
                 "nextButtonText": "Ouder",
