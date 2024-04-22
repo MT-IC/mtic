@@ -20,6 +20,11 @@ export class AppComponent extends BaseComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (this.window?.location && this.window.location.host != "www.marceltimmerman.nl" && this.window.location.host != "localhost:4200") {
+      this.window.location.replace(this.window.location.href.replace(/^https?\:\/\/[^\/]+/, 'https://www.marceltimmerman.nl'));
+      return;
+    }
+
     this.subscribe(
       this.router.events,
       (e) => {
