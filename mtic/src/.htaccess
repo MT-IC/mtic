@@ -2,7 +2,6 @@
 # with a AllowOverride All
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{http_host} ^(www\.)?(plazamila.nl|marceltimmerman.com)
+RewriteCond %{http_host} !^www\.marceltimmerman\.nl
 RewriteRule ^(.*) https://www.marceltimmerman.nl/$1 [R=301,L]
-RewriteEngine Off
 </IfModule>
