@@ -18,7 +18,7 @@
                 "<p class=\"align-center\"><img width=\"200\" class=\"img-circular\" src=\"/assets/content/images/marcel2023_500.jpg\"/></p>",
                 "",
                 "Ik ben een gedreven freelance software ontwikkelaar uit Apeldoorn (Gelderland) met ruime ervaring in vele disciplines. Zowel zelfstandig als in teamverband maak ik een verschil door nauwkeurig en gestructureerd te werken, maar ook buiten de gebaande paden te denken, kritisch te zijn ten aanzien van werkwijzen en procedures en oplossingen voor te stellen die efficiënt en schaalbaar zijn. Mijn houding is klantgericht en collegiaal.",
-                "Op deze website en op LinkedIn zal ik aangeven wanneer ik beschikbaar ben voor een opdracht. Indien u op de hoogte gesteld wilt worden zodra ik beschikbaar ben of u wilt informeren naar mijn beschikbaarheid voor een opdracht, stuurt u mij daarover dan een e-mail.",
+                "Indien u op de hoogte gesteld wilt worden zodra ik beschikbaar ben of u wilt informeren naar mijn beschikbaarheid voor een opdracht, stuurt u mij daarover dan een e-mail.",
                 "Marcel Timmerman<br/>[info@marceltimmerman.nl](mailto:info@marceltimmerman.nl)<br/>[+31 (0) 6 250 67 250](tel:+31%206%20250%2067%20250)<br/>Registratie Handelsregister: 54227593 KvK Oost Nederland",
                 "<p class=\"align-right\"><img src=\"/assets/content/images/pdf.png\"> <a href=\"https://www.dropbox.com/s/jabyus5i1ahclpj/Curriculum%20Vitae%20Marcel%20Timmerman.pdf?dl=1\" target=\"self\">Download CV</a> (pdf)</p>",
                 "<p class=\"align-right\"><a href=\"https://nl.linkedin.com/in/marceltimmerman\" target=\"blank\"><img src=\"/assets/content/images/btn_liprofile_blue_80x15.png\"></a></p>"
@@ -37,7 +37,7 @@
                 "Hoewel ik momenteel op een opdracht zonder einddatum zit, ben ik mogelijk geïnteresseerd in een nieuw full-time project, een paar dagen per week op kantoor binnen een uur rijden vanaf Apeldoorn. Naast C# werk ik graag met Scrum, Azure en Angular, maar dat is geen vereiste. Mocht u iemand zoeken, neem dan contact met me op."
             ],
             "settings": {
-                "hidden": false,
+                "hidden": true,
                 "categoryIndexes": {
                     "home": 1
                 }
@@ -47,12 +47,22 @@
             "id": "graphql-bibliotheken-gepubliceerd",
             "title": "GraphQL bibliotheken gepubliceerd",
             "content": [
-                "Ik heb NuGet packages gepubliceerd waarmee je eenvoudig GraphQL kunt ondersteunen op je web API en eventueel in je client applicatie. In je client applicatie kun je eenvoudig met Linq-achtige code een request opbouwen, die aan de server kant eenvoudig toegepast kan worden op een IQueryable zoals een EntityFramework query. Zie ook de readme [in de NuGet repository](https://www.nuget.org/packages?q=Mt.GraphQL) en [dit artikel](/article/graphql-bibliotheek/)."
+                "Ik heb NuGet packages gepubliceerd waarmee je eenvoudig GraphQL kunt ondersteunen op je web API en eventueel in je client applicatie. In je client applicatie kun je eenvoudig met Linq-achtige code een request opbouwen, die aan de server kant eenvoudig toegepast kan worden op een IQueryable zoals een EntityFramework query. Zie ook [deze readme](/article/graphql-library-readme/) en [dit artikel](/article/graphql-bibliotheek/)."
             ],
             "settings": {
                 "categoryIndexes": {
                     "home": 2
                 }
+            }
+        },
+        {
+            "id": "graphql-library-readme",
+            "title": "Mt.GraphQL README",
+            "content": [
+                "https://raw.githubusercontent.com/codingmt/Mt.GraphQL/main/README.md"
+            ],
+            "settings": {
+                "externalContent": "markup"
             }
         },
         {
@@ -165,7 +175,7 @@
                 "## Aanpak",
                 "Door te baseren op .NetStandard zijn de bibliotheken toepasbaar voor alle .NET versies. Ik heb een aantal taken aangemaakt en die ben ik stuk voor stuk gaan ontwikkelen, waarbij ik ook tests heb gebouwd ter ondersteuning van de bouw en om de correcte werking te bewaken. Met name het runtime bouwen van classes voor de in het request gevraagde datatype, en het bouwen van Linq expressies daarop, bleek uitdagend.",
                 "## Resultaat",
-                "Momenteel staan de bibliotheken als packages [in de NuGet repository](https://www.nuget.org/packages?q=Mt.GraphQL). Zie voor de werking ook [deze Readme](https://www.nuget.org/packages/Mt.GraphQL.Api.Client#readme-body-tab). De source code is te vinden op [Github](https://github.com/codingmt/Mt.GraphQL). Ik hoop er, naast mezelf, ook andere mensen mee te kunnen helpen."
+                "Momenteel staan de bibliotheken als packages [in de NuGet repository](https://www.nuget.org/packages?q=Mt.GraphQL). Zie voor de werking ook [deze algemene readme](/article/graphql-library-readme/), [deze readme van de server](https://www.nuget.org/packages/Mt.GraphQL.Api.Server#readme-body-tab) of [deze readme van de client](https://www.nuget.org/packages/Mt.GraphQL.Api.Client#readme-body-tab). De source code is te vinden op [Github](https://github.com/codingmt/Mt.GraphQL). Ik hoop er, naast mezelf, ook andere mensen mee te kunnen helpen. [Stuur me een e-mail](mailto:info@marceltimmerman.nl) met feedback!"
             ],
             "settings": {
                 "nextButtonText": "Ouder",
