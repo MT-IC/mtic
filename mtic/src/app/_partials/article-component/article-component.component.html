@@ -1,7 +1,7 @@
 <article class="article-component" *ngIf="article">
-  <div [class]="getArticleClass()">
+  <div [class]="getArticleClass()" *ngIf="content$ | async as content">
     <h1 *ngIf="showTitle">{{ article.title }}</h1>
-    <markdown #content [data]="getContent()" appInterceptRouterlink></markdown>
+    <markdown #contentEl [data]="content" appInterceptRouterlink></markdown>
     <a class="nav-btn btn-readmore" *ngIf="!full && hasReadMore" routerLink="/article/{{ article.id }}">Lees meer...</a>
   </div>
 </article>

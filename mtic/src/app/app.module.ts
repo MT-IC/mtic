@@ -14,7 +14,7 @@ import { reducer } from './store/reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { effects } from './store/effects';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { ArticleComponent } from './article/article.component';
 import { ArticleComponentComponent } from './_partials/article-component/article-component.component';
 import { FEATURE } from './store/selectors';
@@ -72,7 +72,8 @@ export const reducers: ActionReducerMap<ReducerState> = {
     })
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })

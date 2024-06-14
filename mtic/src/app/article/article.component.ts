@@ -3,7 +3,6 @@ import { Store } from '@ngrx/store';
 import { BaseComponent } from '../_base/component.base';
 import * as selectors from '../store/selectors';
 import { filter, withLatestFrom } from 'rxjs/operators';
-import { Article } from '../store/models/article.model';
 import { Router } from '@angular/router';
 import { Meta } from '@angular/platform-browser';
 

@@ -1,3 +1,6 @@
+Header add Access-Control-Allow-Origin "marceltimmerman.nl"
+Header add Access-Control-Allow-Origin "www.marceltimmerman.nl"
+
 # be sure to have a <Directory /var/www/html/...> in your apache config
 # with a AllowOverride All
 <IfModule mod_rewrite.c>
