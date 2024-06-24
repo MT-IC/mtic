@@ -47,7 +47,7 @@
             "id": "graphql-bibliotheken-gepubliceerd",
             "title": "GraphQL bibliotheken gepubliceerd",
             "content": [
-                "Ik heb NuGet packages gepubliceerd waarmee je eenvoudig GraphQL kunt ondersteunen op je web API en eventueel in je client applicatie. In je client applicatie kun je eenvoudig met Linq-achtige code een request opbouwen, die aan de server kant eenvoudig toegepast kan worden op een IQueryable zoals een EntityFramework query. Zie ook [deze readme](/article/graphql-library-readme/) en [dit artikel](/article/graphql-bibliotheek/)."
+                "Ik heb NuGet packages gepubliceerd waarmee je eenvoudig [GraphQL](https://learn.microsoft.com/en-us/graph/query-parameters) kunt ondersteunen op je web API en eventueel in je client applicatie. In je client applicatie kun je eenvoudig met Linq-achtige code een request opbouwen, die aan de server kant eenvoudig toegepast kan worden op een IQueryable zoals een EntityFramework query. Zie ook [deze readme](/article/graphql-library-readme/) en [dit artikel over de bouw](/article/graphql-bibliotheek/)."
             ],
             "settings": {
                 "categoryIndexes": {
@@ -169,11 +169,11 @@
                 "Tags:<br/>",
                 ".NET - .NetStandard - Web API - NuGet - Expressions - Expression trees",
                 "## Situatie",
-                "Door behoefte aan een technische uitdaging ben ik begonnen aan de ontwikkeling van deze bibliotheken. Via GraphQL geef je in een request onderdelen door die je ook tegenkomt in een SQL query of een Linq expressie voor EntityFramework. Het leek me mooi een client bibliotheek te ontwikkelen die het mogelijk maakt om met Linq-achtige expressies een request op te stellen, en een server bibliotheek die dat request omzet in een Linq query.",
+                "Via GraphQL geef je in een request onderdelen door die je ook tegenkomt in een SQL query of een Linq expressie voor EntityFramework. Het leek me mooi een client bibliotheek te ontwikkelen die het mogelijk maakt om met Linq-achtige expressies een request op te stellen, en een server bibliotheek die dat request omzet in een Linq query.",
                 "## Taken",
                 "Het ontwerpen, implementeren en testen van de bibliotheken.",
                 "## Aanpak",
-                "Door te baseren op .NetStandard zijn de bibliotheken toepasbaar voor alle .NET versies. Ik heb een aantal taken aangemaakt en die ben ik stuk voor stuk gaan ontwikkelen, waarbij ik ook tests heb gebouwd ter ondersteuning van de bouw en om de correcte werking te bewaken. Met name het runtime bouwen van classes voor de in het request gevraagde datatype, en het bouwen van Linq expressies daarop, bleek uitdagend.",
+                "Door te baseren op .NET Standard zijn de bibliotheken toepasbaar voor alle .NET versies. Ik heb een aantal taken aangemaakt en die ben ik stuk voor stuk gaan ontwikkelen, waarbij ik ook tests heb gebouwd ter ondersteuning van de bouw en om de correcte werking te bewaken. Met name het runtime bouwen van classes voor de in het request gevraagde datatype, en het bouwen van Linq expressies daarop, bleek uitdagend.",
                 "## Resultaat",
                 "Momenteel staan de bibliotheken als packages [in de NuGet repository](https://www.nuget.org/packages?q=Mt.GraphQL). Zie voor de werking ook [deze algemene readme](/article/graphql-library-readme/), [deze readme van de server](https://www.nuget.org/packages/Mt.GraphQL.Api.Server#readme-body-tab) of [deze readme van de client](https://www.nuget.org/packages/Mt.GraphQL.Api.Client#readme-body-tab). De source code is te vinden op [Github](https://github.com/codingmt/Mt.GraphQL). Ik hoop er, naast mezelf, ook andere mensen mee te kunnen helpen. [Stuur me een e-mail](mailto:info@marceltimmerman.nl) met feedback!"
             ],

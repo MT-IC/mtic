@@ -12,7 +12,7 @@
           [class]="getClass(nav)"
           [attr.title]="nav.title"
         >
-          <a routerLink="{{ nav.path }}" [innerHTML]="nav.name" (click)="onHamburgerClick()"></a>
+          <a routerLink="{{ nav.path }}" [innerHTML]="nav.name" (click)="navigate(nav)"></a>
         </div>
       </div>
     </div>
