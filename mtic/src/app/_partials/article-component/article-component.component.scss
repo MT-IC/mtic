@@ -65,6 +65,10 @@ markdown ::ng-deep {
         content: "\f005\f005\f005";
     }
 
+    .hidden {
+        visibility: hidden;
+    }
+
     @media (max-width: $contentWidth) {
         abbr {
             display: none;
